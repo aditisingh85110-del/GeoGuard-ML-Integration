@@ -1,0 +1,147 @@
+{
+  "GET /health": {
+    "status": "healthy",
+    "service": "GeoGuard Satellite Landslide Detection ML Service",
+    "model_loaded": true,
+    "model_version": "GeoGuard_CNN_v1",
+    "database_connected": true,
+    "timestamp": "2026-10-31T22:57:18.042400+00:00"
+  },
+  "GET /latest-prediction": {
+    "id": 1,
+    "prediction": "LANDSLIDE DETECTED",
+    "probability": 0.8442,
+    "decision_threshold": 0.4,
+    "acquisition_id": "S2B_MSIL2A_20261029T050929_N0513_R019_T43PGP_20261029T105708",
+    "acquisition_timestamp": "2026-10-29T05:09:29.024000Z",
+    "processing_timestamp": "2026-10-31T20:12:15.802958+00:00",
+    "cloud_cover_percentage": 9.25,
+    "aoi_name": "TEST_DEVELOPMENT_AOI",
+    "aoi_bbox": [
+      76.95,
+      12.0,
+      77.05,
+      12.1
+    ],
+    "data_status": "SIMULATED",
+    "is_simulated": true,
+    "model_version": "GeoGuard_CNN_v1",
+    "total_patches": 2,
+    "landslide_patches": 1,
+    "high_risk_coordinates": [
+      {
+        "lat": 12.05,
+        "lon": 77.025,
+        "prob": 0.8442
+      }
+    ],
+    "message": "Macro landslide risk detected across 1 of 2 evaluated terrain patches."
+  },
+  "GET /predictions": {
+    "total_count": 1,
+    "limit": 2,
+    "offset": 0,
+    "predictions": [
+      {
+        "id": 1,
+        "prediction": "LANDSLIDE DETECTED",
+        "probability": 0.8442,
+        "decision_threshold": 0.4,
+        "acquisition_id": "S2B_MSIL2A_20261029T050929_N0513_R019_T43PGP_20261029T105708",
+        "acquisition_timestamp": "2026-10-29T05:09:29.024000Z",
+        "processing_timestamp": "2026-10-31T20:12:15.802958+00:00",
+        "cloud_cover_percentage": 9.25,
+        "aoi_name": "TEST_DEVELOPMENT_AOI",
+        "aoi_bbox": [
+          76.95,
+          12.0,
+          77.05,
+          12.1
+        ],
+        "data_status": "SIMULATED",
+        "is_simulated": true,
+        "model_version": "GeoGuard_CNN_v1",
+        "total_patches": 2,
+        "landslide_patches": 1,
+        "high_risk_coordinates": [
+          {
+            "lat": 12.05,
+            "lon": 77.025,
+            "prob": 0.8442
+          }
+        ],
+        "message": "Macro landslide risk detected across 1 of 2 evaluated terrain patches."
+      }
+    ]
+  },
+  "GET /satellite-status": {
+    "connection_status": "UNAUTHENTICATED_TEST_MODE",
+    "stac_catalogue_url": "https://stac.dataspace.copernicus.eu/v1/search",
+    "credentials_configured": false,
+    "last_checked_timestamp": "2026-10-31T22:56:47.034707+00:00",
+    "latest_catalog_acquisition_id": "S2B_MSIL2A_20261029T050929_N0513_R019_T43PGP_20261029T105708",
+    "latest_processed_acquisition_id": "S2B_MSIL2A_20261029T050929_N0513_R019_T43PGP_20261029T105708",
+    "has_new_acquisition": false,
+    "mode": "SIMULATED",
+    "monitored_aoi": {
+      "name": "TEST_DEVELOPMENT_AOI",
+      "bbox": [
+        76.95,
+        12.0,
+        77.05,
+        12.1
+      ],
+      "is_test_aoi": true
+    },
+    "polling_interval_minutes": 15
+  },
+  "POST /trigger-satellite-check": {
+    "status": "completed",
+    "action": "none",
+    "message": "Acquisition S2B_MSIL2A_20261029T050929_N0513_R019_T43PGP_20261029T105708 is already processed. Corridor status is current."
+  },
+  "GET /iot-fusion-preview": {
+    "cross_validation_status": "AGREEMENT",
+    "combined_risk_level": "CRITICAL",
+    "satellite_macro_status": {
+      "prediction": "LANDSLIDE DETECTED",
+      "probability": 0.8442,
+      "acquisition_id": "S2B_MSIL2A_20261029T050929_N0513_R019_T43PGP_20261029T105708",
+      "acquisition_timestamp": "2026-10-29T05:09:29.024000Z",
+      "data_status": "SIMULATED"
+    },
+    "iot_micro_telemetry": {
+      "sensor_id": "GEO-NODE-01",
+      "timestamp": "2026-10-31T22:57:20.041515+00:00",
+      "soil_moisture_percent": 45.2,
+      "rainfall_mm_24h": 62.0,
+      "vibration_intensity": 0.08,
+      "tilt_angle_deg": 2.5,
+      "battery_percent": 92.0
+    },
+    "action_recommendation": "CRITICAL EMERGENCY: Visual satellite detection confirmed by active geotechnical sensor displacement. Immediate highway closure and barrier deployment required.",
+    "fusion_rationale": "Macro satellite CNN detected terrain scarp/movement with 84.4% confidence, corroborated by high geotechnical telemetry (Tilt: 2.5\u00b0, Rain: 62.0mm, Moisture: 45.2%)."
+  },
+  "POST /iot-fusion-cross-validate": {
+    "cross_validation_status": "AGREEMENT",
+    "combined_risk_level": "CRITICAL",
+    "satellite_macro_status": {
+      "prediction": "LANDSLIDE DETECTED",
+      "probability": 0.8442,
+      "acquisition_id": "S2B_MSIL2A_20261029T050929_N0513_R019_T43PGP_20261029T105708",
+      "acquisition_timestamp": "2026-10-29T05:09:29.024000Z",
+      "data_status": "SIMULATED"
+    },
+    "iot_micro_telemetry": {
+      "sensor_id": "GEO-NODE-01",
+      "timestamp": null,
+      "soil_moisture_percent": 46.8,
+      "rainfall_mm_24h": 72.5,
+      "vibration_intensity": 0.24,
+      "tilt_angle_deg": 3.1,
+      "battery_percent": 91.0
+    },
+    "action_recommendation": "CRITICAL EMERGENCY: Visual satellite detection confirmed by active geotechnical sensor displacement. Immediate highway closure and barrier deployment required.",
+    "fusion_rationale": "Macro satellite CNN detected terrain scarp/movement with 84.4% confidence, corroborated by high geotechnical telemetry (Tilt: 3.1\u00b0, Rain: 72.5mm, Moisture: 46.8%)."
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "evaluation_dataset": "Landslide4Sense Test Split (Held-Out)",
+  "total_test_samples": 60,
+  "class_counts": {
+    "landslide": 31,
+    "normal": 29
+  },
+  "decision_threshold": 0.5,
+  "metrics": {
+    "accuracy": 0.75,
+    "precision": 0.8076923076923077,
+    "recall_landslide": 0.6774193548387096,
+    "recall_normal": 0.8275862068965517,
+    "f1_score": 0.7368421052631579,
+    "roc_auc": 0.8520578420467184
+  },
+  "confusion_matrix": {
+    "true_positives": 21,
+    "false_positives": 5,
+    "true_negatives": 24,
+    "false_negatives": 10
+  },
+  "classification_report": {
+    "NORMAL": {
+      "precision": 0.7058823529411765,
+      "recall": 0.8275862068965517,
+      "f1-score": 0.7619047619047619,
+      "support": 29.0
+    },
+    "LANDSLIDE": {
+      "precision": 0.8076923076923077,
+      "recall": 0.6774193548387096,
+      "f1-score": 0.7368421052631579,
+      "support": 31.0
+    },
+    "accuracy": 0.75,
+    "macro avg": {
+      "precision": 0.7567873303167421,
+      "recall": 0.7525027808676307,
+      "f1-score": 0.7493734335839599,
+      "support": 60.0
+    },
+    "weighted avg": {
+      "precision": 0.7584841628959277,
+      "recall": 0.75,
+      "f1-score": 0.7489557226399332,
+      "support": 60.0
+    }
+  }
+}

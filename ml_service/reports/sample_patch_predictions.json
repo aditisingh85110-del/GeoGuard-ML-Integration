@@ -1,0 +1,8 @@
+{
+  "prediction_class": "NORMAL / STABLE",
+  "probability": 0.0561,
+  "decision_threshold": 0.4,
+  "inference_time_ms": 494.63,
+  "model_version": "GeoGuard_CNN_v1",
+  "sample_file": "image_1.h5"
+}

@@ -1,0 +1,120 @@
+{
+  "aoi_metadata": {
+    "aoi_name": "Chamoli_Rishiganga_Corridor_Raini",
+    "bbox": [
+      79.6916,
+      30.476,
+      79.7044,
+      30.488
+    ],
+    "pixel_dimensions": [
+      128,
+      128
+    ],
+    "spatial_resolution_meters": 10.0
+  },
+  "risk_screening_status": "HIGH_PRIORITY_REVIEW",
+  "final_candidate_status": "HIGH_PRIORITY_REVIEW",
+  "status_explanation": "HIGH_PRIORITY_REVIEW: Multi-evidence bi-temporal change detected across 3280 pixels (20.0% of AOI) with sharp vegetation loss (\u0394NDVI <= -0.1) and bare soil/rock exposure between 2021-02-05 and 2021-02-10 on hazardous mountain slopes (MODERATE_SLOPE_HAZARD, mean slope 27.0\u00b0). Immediate geotechnical review recommended. Raw CNN v2 output: 1.0000 (uncalibrated activation).",
+  "assessment_type": "POST_EVENT_SURFACE_CHANGE_DETECTION",
+  "assessment_type_explanation": "This assessment evaluates surface disturbance between paired satellite observations. It is a post-event disturbance screening tool, NOT a pre-event predictive early warning system, and does NOT forecast the exact timing of future slope failures.",
+  "data_provenance": {
+    "imagery_source": "Copernicus Data Space Ecosystem (Sentinel-2 L2A Genuine)",
+    "is_simulated_fallback": false,
+    "acquisition_date": "2021-02-10T05:19:41Z",
+    "acquisition_id": "S2A_MSIL2A_20210210T051941_N0214_R019_T44RKR",
+    "cloud_cover_percent": 1.8,
+    "data_quality_status": "VALID"
+  },
+  "candidate_alert": {
+    "alert_level": "HIGH_PRIORITY_REVIEW",
+    "alert_triggered": true,
+    "aoi_name": "Chamoli_Rishiganga_Corridor_Raini",
+    "alert_timestamp": "2026-11-01T17:24:47Z",
+    "observation_dates": {
+      "pre_event_image_date": "2021-02-05T05:19:39Z",
+      "post_event_image_date": "2021-02-10T05:19:41Z"
+    },
+    "imagery_source": "Copernicus Data Space Ecosystem (Sentinel-2 L2A Genuine)",
+    "evidence_summary": {
+      "change_pixel_count": 3280,
+      "change_pixel_ratio": 0.2002,
+      "terrain_hazard_class": "MODERATE_SLOPE_HAZARD",
+      "mean_slope_degrees": 27.0,
+      "raw_cnn_sigmoid_score": 1.0,
+      "is_autonomous_alert_suppressed": false
+    },
+    "recommended_actions": [
+      "Dispatch field geotechnical survey to inspect valley runout and slope stability.",
+      "Acquire cloud-free high-resolution commercial or aerial imagery.",
+      "Query Sentinel-1 SAR C-band radar coherence loss to verify surface displacement."
+    ]
+  },
+  "cnn_inference_diagnostics": {
+    "model_version": "GeoGuard_CNN_v2",
+    "raw_uncalibrated_sigmoid_score": 1.0,
+    "approximate_pre_sigmoid_logit": 13.816,
+    "decision_threshold": 0.25,
+    "out_of_distribution_detected": false,
+    "out_of_distribution_reasons": [],
+    "model_reliability_status": "EXPERIMENTAL_UNCONFIRMED",
+    "is_autonomous_alert_suppressed": false,
+    "scientific_warning": "Sigmoid score represents uncalibrated mathematical activation, NOT posterior probability. Single-image CNN v2 has 0% validated specificity on Indian healthy vegetation."
+  },
+  "bi_temporal_change_detection": {
+    "status": "SIGNIFICANT_SPECTRAL_CHANGE_DETECTED",
+    "temporal_metadata": {
+      "pre_event_acquisition_date": "2021-02-05T05:19:39Z",
+      "post_event_acquisition_date": "2021-02-10T05:19:41Z"
+    },
+    "ndvi_analysis": {
+      "pre_event_mean_ndvi": 0.216,
+      "post_event_mean_ndvi": 0.2749,
+      "mean_delta_ndvi": 0.0589,
+      "ndvi_drop_threshold": -0.1
+    },
+    "reflectance_difference": {
+      "mean_delta_visible": -0.1368,
+      "per_band_deltas": {
+        "B02_delta_mean": -0.14666,
+        "B03_delta_mean": -0.13818,
+        "B04_delta_mean": -0.12561,
+        "B08_delta_mean": -0.11975
+      }
+    },
+    "spatial_change_metrics": {
+      "total_aoi_pixels": 16384,
+      "candidate_change_pixel_count": 3280,
+      "candidate_change_pixel_ratio": 0.2002,
+      "min_pixels_threshold": 40,
+      "is_significant_change": true
+    },
+    "summary_description": "Detected sharp vegetation loss (\u0394NDVI <= -0.1) and bare soil exposure across 3280 pixels (20.0% of AOI).",
+    "caveats": [
+      "Optical change detection reflects land surface alteration but cannot distinguish landslides from agricultural clearing, intentional logging, or seasonal phenology without terrain context.",
+      "Cloud shadows or subtle atmospheric differences between passes can induce minor localized NDVI fluctuations."
+    ]
+  },
+  "terrain_topography_context": {
+    "status": "AVAILABLE",
+    "dem_source": "PARAMETERIZED_TOPOGRAPHIC_MODEL (Alpine Valley Profile)",
+    "is_parameterized": true,
+    "elevation_context": {
+      "min_elevation_m": 2201.0,
+      "mean_elevation_m": 2619.1,
+      "max_elevation_m": 3038.7
+    },
+    "slope_context": {
+      "mean_slope_degrees": 27.0,
+      "max_slope_degrees": 51.7,
+      "hazard_classification": "MODERATE_SLOPE_HAZARD"
+    },
+    "interpretation": "Mean terrain slope of 27.0\u00b0 classified as MODERATE_SLOPE_HAZARD. Steep terrain (>15\u00b0) supports initiation; flatter valley terrain (<15\u00b0) can host debris deposition."
+  },
+  "limitations_and_missing_evidence": [
+    "Optical Sentinel-2 imagery cannot detect terrain beneath dense cloud cover (frequent during monsoon season).",
+    "Single-image optical classification cannot differentiate historical bare rock cliffs from fresh landslides without bi-temporal change.",
+    "Bi-temporal optical change detection can capture non-landslide surface disturbances (agricultural harvesting, logging, fires).",
+    "This microservice is an experimental geospatial prototype and must NOT be used as an autonomous life-safety early warning system."
+  ]
+}

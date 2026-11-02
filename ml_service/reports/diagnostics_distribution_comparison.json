@@ -1,0 +1,96 @@
+{
+  "acquisition_metadata": {
+    "product_id": "S2B_MSIL2A_20261029T050929_N0513_R019_T43PGP_20261029T105708",
+    "acquisition_timestamp": "2026-10-29T05:09:29.024000Z",
+    "download_timestamp": "2026-11-01T13:19:15Z",
+    "cloud_cover_percent": 9.25,
+    "bbox_wgs84": [
+      76.95,
+      12.0,
+      77.05,
+      12.1
+    ],
+    "intended_highway_corridor_covered": false,
+    "status_reason": "HIGHWAY_AOI_BBOX is unconfigured in .env; test bounding box in Southern Karnataka used.",
+    "spatial_extent_km": [
+      10.9,
+      11.1
+    ],
+    "output_pixels": [
+      128,
+      128
+    ],
+    "effective_pixel_resolution_meters": 86.0,
+    "native_sentinel2_resolution_meters": 10.0,
+    "spatial_sampling_artifact": "Image was resampled down to 86m/pixel instead of 10m native resolution."
+  },
+  "model_prediction": {
+    "prediction_class": "NORMAL / STABLE",
+    "probability": 0.1153,
+    "decision_threshold": 0.4,
+    "inference_time_ms": 1014.08,
+    "model_version": "GeoGuard_CNN_v1"
+  },
+  "band_distributions": {
+    "B02": {
+      "training_mean": 0.9098279476165771,
+      "training_std": 0.16724763810634613,
+      "live_raw_min": 0.026399999856948853,
+      "live_raw_max": 0.26820001006126404,
+      "live_raw_mean": 0.056694917380809784,
+      "live_raw_std": 0.014199066907167435,
+      "normalized_min": -5.0,
+      "normalized_max": -3.8363940715789795,
+      "normalized_mean": -4.9910173416137695,
+      "normalized_std": 0.04312789440155029,
+      "percent_clipped_at_minus_5": 91.68701171875,
+      "percent_clipped_at_plus_5": 0.0,
+      "distribution_shift_z_score": -5.101016998291016
+    },
+    "B03": {
+      "training_mean": 0.9971927404403687,
+      "training_std": 0.22838464379310608,
+      "live_raw_min": 0.025200000032782555,
+      "live_raw_max": 0.296999990940094,
+      "live_raw_mean": 0.07915285229682922,
+      "live_raw_std": 0.016390547156333923,
+      "normalized_min": -4.255945682525635,
+      "normalized_max": -3.0658483505249023,
+      "normalized_mean": -4.01970911026001,
+      "normalized_std": 0.07176729291677475,
+      "percent_clipped_at_minus_5": 0.0,
+      "percent_clipped_at_plus_5": 0.0,
+      "distribution_shift_z_score": -4.019709587097168
+    },
+    "B04": {
+      "training_mean": 1.037382960319519,
+      "training_std": 0.39602652192115784,
+      "live_raw_min": 0.01899999938905239,
+      "live_raw_max": 0.3208000063896179,
+      "live_raw_mean": 0.06630326807498932,
+      "live_raw_std": 0.024875352159142494,
+      "normalized_min": -2.5715017318725586,
+      "normalized_max": -1.8094316720962524,
+      "normalized_mean": -2.452057361602783,
+      "normalized_std": 0.06281233578920364,
+      "percent_clipped_at_minus_5": 0.0,
+      "percent_clipped_at_plus_5": 0.0,
+      "distribution_shift_z_score": -2.452057361602783
+    },
+    "B08": {
+      "training_mean": 1.0323201417922974,
+      "training_std": 0.32951024174690247,
+      "live_raw_min": 0.0,
+      "live_raw_max": 0.6353999972343445,
+      "live_raw_mean": 0.28827667236328125,
+      "live_raw_std": 0.0737980455160141,
+      "normalized_min": -3.132892370223999,
+      "normalized_max": -1.204576015472412,
+      "normalized_mean": -2.258028268814087,
+      "normalized_std": 0.22396284341812134,
+      "percent_clipped_at_minus_5": 0.0,
+      "percent_clipped_at_plus_5": 0.0,
+      "distribution_shift_z_score": -2.258028268814087
+    }
+  }
+}

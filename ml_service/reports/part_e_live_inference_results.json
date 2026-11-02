@@ -1,0 +1,488 @@
+{
+  "radiometric_validation": {
+    "status": "VALID",
+    "is_valid": true,
+    "diagnostics": {
+      "invalid_ratio": 0.0,
+      "cloud_ratio": 0.0,
+      "band_diagnostics": {
+        "B02": {
+          "mean": 0.0567,
+          "min": 0.0264,
+          "max": 0.2682
+        },
+        "B03": {
+          "mean": 0.0792,
+          "min": 0.0252,
+          "max": 0.297
+        },
+        "B04": {
+          "mean": 0.0663,
+          "min": 0.019,
+          "max": 0.3208
+        },
+        "B08": {
+          "mean": 0.2883,
+          "min": 0.0,
+          "max": 0.6354
+        }
+      }
+    }
+  },
+  "per_band_comparison": {
+    "B02": {
+      "training_boa_mean": 0.07500944286584854,
+      "training_boa_std": 0.013792351819574833,
+      "live_cdse_raw_mean": 0.056694917380809784,
+      "live_cdse_raw_std": 0.014199066907167435,
+      "live_cdse_raw_min": 0.026399999856948853,
+      "live_cdse_raw_max": 0.26820001006126404,
+      "normalized_z_score_mean": -1.3278756141662598,
+      "normalized_min": -3.524376630783081,
+      "normalized_max": 5.0,
+      "clipped_at_minus_5_percent": 0.0,
+      "clipped_at_plus_5_percent": 0.09765625
+    },
+    "B03": {
+      "training_boa_mean": 0.0661444216966629,
+      "training_boa_std": 0.015155021101236343,
+      "live_cdse_raw_mean": 0.07915285229682922,
+      "live_cdse_raw_std": 0.016390547156333923,
+      "live_cdse_raw_min": 0.025200000032782555,
+      "live_cdse_raw_max": 0.296999990940094,
+      "normalized_z_score_mean": 0.8583577275276184,
+      "normalized_min": -2.701706647872925,
+      "normalized_max": 5.0,
+      "clipped_at_minus_5_percent": 0.0,
+      "clipped_at_plus_5_percent": 0.634765625
+    },
+    "B04": {
+      "training_boa_mean": 0.046180374920368195,
+      "training_boa_std": 0.01763189770281315,
+      "live_cdse_raw_mean": 0.06630326807498932,
+      "live_cdse_raw_std": 0.024875352159142494,
+      "live_cdse_raw_min": 0.01899999938905239,
+      "live_cdse_raw_max": 0.3208000063896179,
+      "normalized_z_score_mean": 1.1412779092788696,
+      "normalized_min": -1.5415456295013428,
+      "normalized_max": 5.0,
+      "clipped_at_minus_5_percent": 0.0,
+      "clipped_at_plus_5_percent": 2.703857421875
+    },
+    "B08": {
+      "training_boa_mean": 0.20039613544940948,
+      "training_boa_std": 0.06396835297346115,
+      "live_cdse_raw_mean": 0.28827667236328125,
+      "live_cdse_raw_std": 0.0737980455160141,
+      "live_cdse_raw_min": 0.0,
+      "live_cdse_raw_max": 0.6353999972343445,
+      "normalized_z_score_mean": 1.3738129138946533,
+      "normalized_min": -3.1327385902404785,
+      "normalized_max": 5.0,
+      "clipped_at_minus_5_percent": 0.0,
+      "clipped_at_plus_5_percent": 0.30517578125
+    }
+  },
+  "prediction": {
+    "probability": 0.9999606013298035,
+    "decision_threshold": 0.25,
+    "prediction_class": "LANDSLIDE DETECTED",
+    "model_version": "GeoGuard_CNN_v2"
+  },
+  "activation_audit": [
+    {
+      "layer_name": "satellite_patch_input",
+      "layer_type": "InputLayer",
+      "shape": [
+        1,
+        128,
+        128,
+        4
+      ],
+      "min": -3.524376630783081,
+      "max": 5.0,
+      "mean": 0.5002484917640686,
+      "zero_percentage": 0.0
+    },
+    {
+      "layer_name": "conv1_1",
+      "layer_type": "Conv2D",
+      "shape": [
+        1,
+        128,
+        128,
+        32
+      ],
+      "min": -5.9319915771484375,
+      "max": 4.150573253631592,
+      "mean": -0.0021410249173641205,
+      "zero_percentage": 0.0
+    },
+    {
+      "layer_name": "bn1_1",
+      "layer_type": "BatchNormalization",
+      "shape": [
+        1,
+        128,
+        128,
+        32
+      ],
+      "min": -6.259755611419678,
+      "max": 7.087865352630615,
+      "mean": 0.02759154513478279,
+      "zero_percentage": 0.0
+    },
+    {
+      "layer_name": "relu1_1",
+      "layer_type": "Activation",
+      "shape": [
+        1,
+        128,
+        128,
+        32
+      ],
+      "min": 0.0,
+      "max": 7.087865352630615,
+      "mean": 0.5047584772109985,
+      "zero_percentage": 49.4140625
+    },
+    {
+      "layer_name": "conv1_2",
+      "layer_type": "Conv2D",
+      "shape": [
+        1,
+        128,
+        128,
+        32
+      ],
+      "min": -5.196346759796143,
+      "max": 5.666396141052246,
+      "mean": -0.09937388449907303,
+      "zero_percentage": 0.0
+    },
+    {
+      "layer_name": "bn1_2",
+      "layer_type": "BatchNormalization",
+      "shape": [
+        1,
+        128,
+        128,
+        32
+      ],
+      "min": -6.07671594619751,
+      "max": 7.677003860473633,
+      "mean": -0.053153347223997116,
+      "zero_percentage": 0.0
+    },
+    {
+      "layer_name": "relu1_2",
+      "layer_type": "Activation",
+      "shape": [
+        1,
+        128,
+        128,
+        32
+      ],
+      "min": 0.0,
+      "max": 7.677003860473633,
+      "mean": 0.4072973430156708,
+      "zero_percentage": 52.139854431152344
+    },
+    {
+      "layer_name": "pool1",
+      "layer_type": "MaxPooling2D",
+      "shape": [
+        1,
+        64,
+        64,
+        32
+      ],
+      "min": 0.0,
+      "max": 7.677003860473633,
+      "mean": 0.7161332368850708,
+      "zero_percentage": 32.256317138671875
+    },
+    {
+      "layer_name": "drop1",
+      "layer_type": "Dropout",
+      "shape": [
+        1,
+        64,
+        64,
+        32
+      ],
+      "min": 0.0,
+      "max": 7.677003860473633,
+      "mean": 0.7161332368850708,
+      "zero_percentage": 32.256317138671875
+    },
+    {
+      "layer_name": "conv2_1",
+      "layer_type": "Conv2D",
+      "shape": [
+        1,
+        64,
+        64,
+        64
+      ],
+      "min": -6.6063232421875,
+      "max": 6.938473701477051,
+      "mean": 0.2431986778974533,
+      "zero_percentage": 0.0
+    },
+    {
+      "layer_name": "bn2_1",
+      "layer_type": "BatchNormalization",
+      "shape": [
+        1,
+        64,
+        64,
+        64
+      ],
+      "min": -5.047377109527588,
+      "max": 5.677203178405762,
+      "mean": 0.1071174219250679,
+      "zero_percentage": 0.0
+    },
+    {
+      "layer_name": "relu2_1",
+      "layer_type": "Activation",
+      "shape": [
+        1,
+        64,
+        64,
+        64
+      ],
+      "min": 0.0,
+      "max": 5.677203178405762,
+      "mean": 0.4329535663127899,
+      "zero_percentage": 44.20280456542969
+    },
+    {
+      "layer_name": "conv2_2",
+      "layer_type": "Conv2D",
+      "shape": [
+        1,
+        64,
+        64,
+        64
+      ],
+      "min": -7.772304534912109,
+      "max": 9.601334571838379,
+      "mean": 0.4863683581352234,
+      "zero_percentage": 0.0
+    },
+    {
+      "layer_name": "bn2_2",
+      "layer_type": "BatchNormalization",
+      "shape": [
+        1,
+        64,
+        64,
+        64
+      ],
+      "min": -5.946225643157959,
+      "max": 7.154209136962891,
+      "mean": 0.3036225140094757,
+      "zero_percentage": 0.0
+    },
+    {
+      "layer_name": "relu2_2",
+      "layer_type": "Activation",
+      "shape": [
+        1,
+        64,
+        64,
+        64
+      ],
+      "min": 0.0,
+      "max": 7.154209136962891,
+      "mean": 0.6522349119186401,
+      "zero_percentage": 38.367462158203125
+    },
+    {
+      "layer_name": "pool2",
+      "layer_type": "MaxPooling2D",
+      "shape": [
+        1,
+        32,
+        32,
+        64
+      ],
+      "min": 0.0,
+      "max": 7.154209136962891,
+      "mean": 0.8643298149108887,
+      "zero_percentage": 30.0750732421875
+    },
+    {
+      "layer_name": "drop2",
+      "layer_type": "Dropout",
+      "shape": [
+        1,
+        32,
+        32,
+        64
+      ],
+      "min": 0.0,
+      "max": 7.154209136962891,
+      "mean": 0.8643298149108887,
+      "zero_percentage": 30.0750732421875
+    },
+    {
+      "layer_name": "conv3_1",
+      "layer_type": "Conv2D",
+      "shape": [
+        1,
+        32,
+        32,
+        128
+      ],
+      "min": -14.79675579071045,
+      "max": 12.048524856567383,
+      "mean": 0.25611600279808044,
+      "zero_percentage": 0.0
+    },
+    {
+      "layer_name": "bn3_1",
+      "layer_type": "BatchNormalization",
+      "shape": [
+        1,
+        32,
+        32,
+        128
+      ],
+      "min": -6.261216163635254,
+      "max": 5.66887092590332,
+      "mean": 0.16817723214626312,
+      "zero_percentage": 0.0
+    },
+    {
+      "layer_name": "relu3_1",
+      "layer_type": "Activation",
+      "shape": [
+        1,
+        32,
+        32,
+        128
+      ],
+      "min": 0.0,
+      "max": 5.66887092590332,
+      "mean": 0.7598639130592346,
+      "zero_percentage": 47.235870361328125
+    },
+    {
+      "layer_name": "pool3",
+      "layer_type": "MaxPooling2D",
+      "shape": [
+        1,
+        16,
+        16,
+        128
+      ],
+      "min": 0.0,
+      "max": 5.66887092590332,
+      "mean": 0.9585005640983582,
+      "zero_percentage": 42.840576171875
+    },
+    {
+      "layer_name": "drop3",
+      "layer_type": "Dropout",
+      "shape": [
+        1,
+        16,
+        16,
+        128
+      ],
+      "min": 0.0,
+      "max": 5.66887092590332,
+      "mean": 0.9585005640983582,
+      "zero_percentage": 42.840576171875
+    },
+    {
+      "layer_name": "gap",
+      "layer_type": "GlobalAveragePooling2D",
+      "shape": [
+        1,
+        128
+      ],
+      "min": 0.0,
+      "max": 2.978178024291992,
+      "mean": 0.9585006237030029,
+      "zero_percentage": 3.90625
+    },
+    {
+      "layer_name": "dense1",
+      "layer_type": "Dense",
+      "shape": [
+        1,
+        64
+      ],
+      "min": -3.9875409603118896,
+      "max": 5.150478363037109,
+      "mean": 0.4725019037723541,
+      "zero_percentage": 0.0
+    },
+    {
+      "layer_name": "bn_dense",
+      "layer_type": "BatchNormalization",
+      "shape": [
+        1,
+        64
+      ],
+      "min": -4.258646488189697,
+      "max": 4.812760353088379,
+      "mean": 0.5967968702316284,
+      "zero_percentage": 0.0
+    },
+    {
+      "layer_name": "relu_dense",
+      "layer_type": "Activation",
+      "shape": [
+        1,
+        64
+      ],
+      "min": 0.0,
+      "max": 4.812760353088379,
+      "mean": 1.594531536102295,
+      "zero_percentage": 32.8125
+    },
+    {
+      "layer_name": "drop_head",
+      "layer_type": "Dropout",
+      "shape": [
+        1,
+        64
+      ],
+      "min": 0.0,
+      "max": 4.812760353088379,
+      "mean": 1.594531536102295,
+      "zero_percentage": 32.8125
+    },
+    {
+      "layer_name": "landslide_probability",
+      "layer_type": "Dense",
+      "shape": [
+        1,
+        1
+      ],
+      "min": 0.9999606013298035,
+      "max": 0.9999606013298035,
+      "mean": 0.9999606013298035,
+      "zero_percentage": 0.0
+    }
+  ],
+  "guardrail_verification": {
+    "zero_fill_test": {
+      "status": "INSUFFICIENT_DATA",
+      "is_valid": false
+    },
+    "cloud_saturation_test": {
+      "status": "INSUFFICIENT_DATA",
+      "is_valid": false
+    },
+    "raw_dn_out_of_bounds_test": {
+      "status": "RADIOMETRIC_MISMATCH",
+      "is_valid": false
+    }
+  }
+}

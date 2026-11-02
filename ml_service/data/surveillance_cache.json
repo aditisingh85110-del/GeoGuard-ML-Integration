@@ -1,0 +1,938 @@
+{
+  "IN-UK-DEHRADUN-01": {
+    "aoi_id": "IN-UK-DEHRADUN-01",
+    "name": "Dehradun Foothills Monitoring Corridor",
+    "state": "Uttarakhand",
+    "region": "Western Himalayas",
+    "corridor_code": "NH-58 / NH-72",
+    "bbox_wgs84": [
+      78.03,
+      30.31,
+      78.0428,
+      30.322
+    ],
+    "center_coords": [
+      78.0364,
+      30.316
+    ],
+    "verification_status": "VERIFIED",
+    "verification_source": "NHAI Highway Corridor Survey & Survey of India Toposheet",
+    "hazard_classification": "DEBRIS_SLIDE_AND_EROSION_HAZARD",
+    "monitoring_status": "ACTIVE",
+    "observed_disturbance": "LOW_OBSERVED_DISTURBANCE",
+    "disturbance_intensity_label": "Low Observed Disturbance",
+    "candidate_pixels": 0,
+    "candidate_ratio_pct": 0.0,
+    "is_alert_candidate": false,
+    "cloud_cover_percent": 2.87,
+    "acquisition_id": "S2B_MSIL2A_20261025T052909_N0513_R105_T44RKU_20261025T073719",
+    "acquisition_date": "2026-10-25T05:29:09.024000Z",
+    "pre_acquisition_id": "S2A_MSIL2A_20261022T053241_N0513_R105_T44RKU_20261022T102211",
+    "pre_acquisition_date": "2026-10-22T05:32:41.024000Z",
+    "evaluation_timestamp": "2026-11-01T22:23:31Z",
+    "data_quality_status": "VALID_BI_TEMPORAL_EVALUATION",
+    "imagery_source": "Copernicus Data Space Ecosystem (Sentinel-2 L2A Dynamically Retrieved)",
+    "cnn_raw_score": 1.0,
+    "mean_delta_ndvi": 0.0019,
+    "provisional_disclaimer": "PROVISIONAL / NOT SCIENTIFICALLY CALIBRATED. Reflects observed optical canopy/soil surface disturbance only; NOT predictive hazard or confirmed landslide severity.",
+    "status_explanation": "LOW_OBSERVED_RISK: Bi-temporal spectral comparison between 2026-10-22 and 2026-10-25 shows no significant mass-wasting signature across the monitored corridor (mean \u0394NDVI: +0.002). High single-image CNN score (1.0000) was correctly rejected as out-of-distribution saturation.",
+    "detailed_evaluation": {
+      "aoi_metadata": {
+        "aoi_name": "Dehradun Foothills Monitoring Corridor",
+        "bbox": [
+          78.03,
+          30.31,
+          78.0428,
+          30.322
+        ],
+        "pixel_dimensions": [
+          133,
+          128
+        ],
+        "spatial_resolution_meters": 10.0
+      },
+      "risk_screening_status": "LOW_OBSERVED_RISK",
+      "final_candidate_status": "LOW_OBSERVED_RISK",
+      "status_explanation": "LOW_OBSERVED_RISK: Bi-temporal spectral comparison between 2026-10-22 and 2026-10-25 shows no significant mass-wasting signature across the monitored corridor (mean \u0394NDVI: +0.002). High single-image CNN score (1.0000) was correctly rejected as out-of-distribution saturation.",
+      "assessment_type": "POST_EVENT_SURFACE_CHANGE_DETECTION",
+      "assessment_type_explanation": "This assessment evaluates surface disturbance between paired satellite observations. It is a post-event disturbance screening tool, NOT a pre-event predictive early warning system, and does NOT forecast the exact timing of future slope failures.",
+      "data_provenance": {
+        "imagery_source": "Copernicus Data Space Ecosystem (Sentinel-2 L2A Dynamically Retrieved)",
+        "is_simulated_fallback": false,
+        "acquisition_date": "2026-10-25T05:29:09.024000Z",
+        "acquisition_id": "S2B_MSIL2A_20261025T052909_N0513_R105_T44RKU_20261025T073719",
+        "cloud_cover_percent": 2.87,
+        "data_quality_status": "VALID"
+      },
+      "candidate_alert": {
+        "alert_level": "LOW_OBSERVED_RISK",
+        "alert_triggered": false,
+        "aoi_name": "Dehradun Foothills Monitoring Corridor",
+        "alert_timestamp": "2026-11-01T22:23:42Z",
+        "observation_dates": {
+          "pre_event_image_date": "2026-10-22T05:32:41.024000Z",
+          "post_event_image_date": "2026-10-25T05:29:09.024000Z"
+        },
+        "imagery_source": "Copernicus Data Space Ecosystem (Sentinel-2 L2A Dynamically Retrieved)",
+        "evidence_summary": {
+          "change_pixel_count": 0,
+          "change_pixel_ratio": 0.0,
+          "terrain_hazard_class": "UNKNOWN_TERRAIN_CONTEXT",
+          "mean_slope_degrees": null,
+          "raw_cnn_sigmoid_score": 1.0,
+          "is_autonomous_alert_suppressed": false
+        },
+        "recommended_actions": [
+          "Maintain routine periodic monitoring."
+        ]
+      },
+      "cnn_inference_diagnostics": {
+        "model_version": "GeoGuard_CNN_v2",
+        "raw_uncalibrated_sigmoid_score": 1.0,
+        "approximate_pre_sigmoid_logit": 13.816,
+        "decision_threshold": 0.25,
+        "out_of_distribution_detected": false,
+        "out_of_distribution_reasons": [],
+        "model_reliability_status": "EXPERIMENTAL_UNCONFIRMED",
+        "is_autonomous_alert_suppressed": false,
+        "scientific_warning": "Sigmoid score represents uncalibrated mathematical activation, NOT posterior probability. Single-image CNN v2 has 0% validated specificity on Indian healthy vegetation."
+      },
+      "bi_temporal_change_detection": {
+        "status": "NO_SIGNIFICANT_CHANGE",
+        "temporal_metadata": {
+          "pre_event_acquisition_date": "2026-10-22T05:32:41.024000Z",
+          "post_event_acquisition_date": "2026-10-25T05:29:09.024000Z"
+        },
+        "ndvi_analysis": {
+          "pre_event_mean_ndvi": 0.2492,
+          "post_event_mean_ndvi": 0.251,
+          "mean_delta_ndvi": 0.0019,
+          "ndvi_drop_threshold": -0.15
+        },
+        "reflectance_difference": {
+          "mean_delta_visible": 0.0027,
+          "per_band_deltas": {
+            "B02_delta_mean": 0.00254,
+            "B03_delta_mean": 0.0021,
+            "B04_delta_mean": 0.00333,
+            "B08_delta_mean": 0.00661
+          }
+        },
+        "spatial_change_metrics": {
+          "total_aoi_pixels": 17024,
+          "candidate_change_pixel_count": 0,
+          "candidate_change_pixel_ratio": 0.0,
+          "min_pixels_threshold": 50,
+          "is_significant_change": false
+        },
+        "summary_description": "No significant mass-wasting spectral signature observed between 2026-10-22T05:32:41.024000Z and 2026-10-25T05:29:09.024000Z. Candidate pixels (0) below threshold (50).",
+        "caveats": [
+          "Optical change detection reflects land surface alteration but cannot distinguish landslides from agricultural clearing, intentional logging, or seasonal phenology without terrain context.",
+          "Cloud shadows or subtle atmospheric differences between passes can induce minor localized NDVI fluctuations."
+        ]
+      },
+      "terrain_topography_context": {
+        "status": "UNAVAILABLE",
+        "dem_source": null,
+        "is_parameterized": false,
+        "elevation_context": {
+          "min_elevation_m": null,
+          "mean_elevation_m": null,
+          "max_elevation_m": null
+        },
+        "slope_context": {
+          "mean_slope_degrees": null,
+          "max_slope_degrees": null,
+          "hazard_classification": "UNKNOWN_TERRAIN_CONTEXT"
+        },
+        "note": "Digital Elevation Model (DEM) data was not provided for this pass. Optical change detection continues without topographic constraint."
+      },
+      "limitations_and_missing_evidence": [
+        "Optical Sentinel-2 imagery cannot detect terrain beneath dense cloud cover (frequent during monsoon season).",
+        "Single-image optical classification cannot differentiate historical bare rock cliffs from fresh landslides without bi-temporal change.",
+        "Bi-temporal optical change detection can capture non-landslide surface disturbances (agricultural harvesting, logging, fires).",
+        "This microservice is an experimental geospatial prototype and must NOT be used as an autonomous life-safety early warning system."
+      ]
+    }
+  },
+  "IN-HP-KINNAUR-01": {
+    "aoi_id": "IN-HP-KINNAUR-01",
+    "name": "Kinnaur Nigulsari Highway Corridor",
+    "state": "Himachal Pradesh",
+    "region": "Western Himalayas",
+    "corridor_code": "NH-05 (Hindustan-Tibet Road)",
+    "bbox_wgs84": [
+      77.85,
+      31.52,
+      77.87,
+      31.54
+    ],
+    "center_coords": [
+      77.86,
+      31.53
+    ],
+    "verification_status": "VERIFIED",
+    "verification_source": "Geological Survey of India Post-Disaster Geotechnical Report (Kinnaur 2021); BRO Project Deepak",
+    "hazard_classification": "CHRONIC_ROCKFALL_AND_DEBRIS_AVALANCHE",
+    "monitoring_status": "ACTIVE",
+    "observed_disturbance": "LOW_OBSERVED_DISTURBANCE",
+    "disturbance_intensity_label": "Low Observed Disturbance",
+    "candidate_pixels": 0,
+    "candidate_ratio_pct": 0.0,
+    "is_alert_candidate": false,
+    "cloud_cover_percent": 13.08,
+    "acquisition_id": "S2C_MSIL2A_20261030T052941_N0513_R105_T43SGR_20261030T083603",
+    "acquisition_date": "2026-10-30T05:29:41.025000Z",
+    "pre_acquisition_id": "S2B_MSIL2A_20261025T052909_N0513_R105_T44RKV_20261025T073719",
+    "pre_acquisition_date": "2026-10-25T05:29:09.024000Z",
+    "evaluation_timestamp": "2026-11-01T22:11:17Z",
+    "data_quality_status": "VALID_BI_TEMPORAL_EVALUATION",
+    "imagery_source": "Copernicus Data Space Ecosystem (Sentinel-2 L2A Dynamically Retrieved)",
+    "cnn_raw_score": 0.5098,
+    "mean_delta_ndvi": 0.2211,
+    "provisional_disclaimer": "PROVISIONAL / NOT SCIENTIFICALLY CALIBRATED. Reflects observed optical canopy/soil surface disturbance only; NOT predictive hazard or confirmed landslide severity.",
+    "status_explanation": "LOW_OBSERVED_RISK: Bi-temporal spectral comparison between 2026-10-25 and 2026-10-30 shows no significant mass-wasting signature across the monitored corridor (mean \u0394NDVI: +0.221). High single-image CNN score (0.5098) was correctly rejected as out-of-distribution saturation.",
+    "detailed_evaluation": {
+      "aoi_metadata": {
+        "aoi_name": "Kinnaur Nigulsari Highway Corridor",
+        "bbox": [
+          77.85,
+          31.52,
+          77.87,
+          31.54
+        ],
+        "pixel_dimensions": [
+          222,
+          190
+        ],
+        "spatial_resolution_meters": 10.0
+      },
+      "risk_screening_status": "LOW_OBSERVED_RISK",
+      "final_candidate_status": "LOW_OBSERVED_RISK",
+      "status_explanation": "LOW_OBSERVED_RISK: Bi-temporal spectral comparison between 2026-10-25 and 2026-10-30 shows no significant mass-wasting signature across the monitored corridor (mean \u0394NDVI: +0.221). High single-image CNN score (0.5098) was correctly rejected as out-of-distribution saturation.",
+      "assessment_type": "POST_EVENT_SURFACE_CHANGE_DETECTION",
+      "assessment_type_explanation": "This assessment evaluates surface disturbance between paired satellite observations. It is a post-event disturbance screening tool, NOT a pre-event predictive early warning system, and does NOT forecast the exact timing of future slope failures.",
+      "data_provenance": {
+        "imagery_source": "Copernicus Data Space Ecosystem (Sentinel-2 L2A Dynamically Retrieved)",
+        "is_simulated_fallback": false,
+        "acquisition_date": "2026-10-30T05:29:41.025000Z",
+        "acquisition_id": "S2C_MSIL2A_20261030T052941_N0513_R105_T43SGR_20261030T083603",
+        "cloud_cover_percent": 13.08,
+        "data_quality_status": "VALID"
+      },
+      "candidate_alert": {
+        "alert_level": "LOW_OBSERVED_RISK",
+        "alert_triggered": false,
+        "aoi_name": "Kinnaur Nigulsari Highway Corridor",
+        "alert_timestamp": "2026-11-01T22:11:27Z",
+        "observation_dates": {
+          "pre_event_image_date": "2026-10-25T05:29:09.024000Z",
+          "post_event_image_date": "2026-10-30T05:29:41.025000Z"
+        },
+        "imagery_source": "Copernicus Data Space Ecosystem (Sentinel-2 L2A Dynamically Retrieved)",
+        "evidence_summary": {
+          "change_pixel_count": 0,
+          "change_pixel_ratio": 0.0,
+          "terrain_hazard_class": "UNKNOWN_TERRAIN_CONTEXT",
+          "mean_slope_degrees": null,
+          "raw_cnn_sigmoid_score": 0.5098,
+          "is_autonomous_alert_suppressed": false
+        },
+        "recommended_actions": [
+          "Maintain routine periodic monitoring."
+        ]
+      },
+      "cnn_inference_diagnostics": {
+        "model_version": "GeoGuard_CNN_v2",
+        "raw_uncalibrated_sigmoid_score": 0.5098,
+        "approximate_pre_sigmoid_logit": 0.039,
+        "decision_threshold": 0.25,
+        "out_of_distribution_detected": false,
+        "out_of_distribution_reasons": [],
+        "model_reliability_status": "EXPERIMENTAL_UNCONFIRMED",
+        "is_autonomous_alert_suppressed": false,
+        "scientific_warning": "Sigmoid score represents uncalibrated mathematical activation, NOT posterior probability. Single-image CNN v2 has 0% validated specificity on Indian healthy vegetation."
+      },
+      "bi_temporal_change_detection": {
+        "status": "NO_SIGNIFICANT_CHANGE",
+        "temporal_metadata": {
+          "pre_event_acquisition_date": "2026-10-25T05:29:09.024000Z",
+          "post_event_acquisition_date": "2026-10-30T05:29:41.025000Z"
+        },
+        "ndvi_analysis": {
+          "pre_event_mean_ndvi": 0.4159,
+          "post_event_mean_ndvi": 0.637,
+          "mean_delta_ndvi": 0.2211,
+          "ndvi_drop_threshold": -0.15
+        },
+        "reflectance_difference": {
+          "mean_delta_visible": -0.0388,
+          "per_band_deltas": {
+            "B02_delta_mean": -0.04831,
+            "B03_delta_mean": -0.03649,
+            "B04_delta_mean": -0.03164,
+            "B08_delta_mean": 0.01916
+          }
+        },
+        "spatial_change_metrics": {
+          "total_aoi_pixels": 42180,
+          "candidate_change_pixel_count": 0,
+          "candidate_change_pixel_ratio": 0.0,
+          "min_pixels_threshold": 50,
+          "is_significant_change": false
+        },
+        "summary_description": "No significant mass-wasting spectral signature observed between 2026-10-25T05:29:09.024000Z and 2026-10-30T05:29:41.025000Z. Candidate pixels (0) below threshold (50).",
+        "caveats": [
+          "Optical change detection reflects land surface alteration but cannot distinguish landslides from agricultural clearing, intentional logging, or seasonal phenology without terrain context.",
+          "Cloud shadows or subtle atmospheric differences between passes can induce minor localized NDVI fluctuations."
+        ]
+      },
+      "terrain_topography_context": {
+        "status": "UNAVAILABLE",
+        "dem_source": null,
+        "is_parameterized": false,
+        "elevation_context": {
+          "min_elevation_m": null,
+          "mean_elevation_m": null,
+          "max_elevation_m": null
+        },
+        "slope_context": {
+          "mean_slope_degrees": null,
+          "max_slope_degrees": null,
+          "hazard_classification": "UNKNOWN_TERRAIN_CONTEXT"
+        },
+        "note": "Digital Elevation Model (DEM) data was not provided for this pass. Optical change detection continues without topographic constraint."
+      },
+      "limitations_and_missing_evidence": [
+        "Optical Sentinel-2 imagery cannot detect terrain beneath dense cloud cover (frequent during monsoon season).",
+        "Single-image optical classification cannot differentiate historical bare rock cliffs from fresh landslides without bi-temporal change.",
+        "Bi-temporal optical change detection can capture non-landslide surface disturbances (agricultural harvesting, logging, fires).",
+        "This microservice is an experimental geospatial prototype and must NOT be used as an autonomous life-safety early warning system."
+      ]
+    }
+  },
+  "IN-JK-RAMBAN-01": {
+    "aoi_id": "IN-JK-RAMBAN-01",
+    "name": "Ramban Panthyal Active Slope Corridor",
+    "state": "Jammu & Kashmir",
+    "region": "Pir Panjal / Western Himalayas",
+    "corridor_code": "NH-44 (Jammu-Srinagar Arterial)",
+    "bbox_wgs84": [
+      75.18,
+      33.22,
+      75.21,
+      33.25
+    ],
+    "center_coords": [
+      75.195,
+      33.235
+    ],
+    "verification_status": "VERIFIED",
+    "verification_source": "NHAI / BRO Landslide Hazard Zonation Map; Panthyal Shooting Stone Geotechnical Survey",
+    "hazard_classification": "ACUTE_SHOOTING_STONE_AND_SLOPE_CREEP",
+    "monitoring_status": "ACTIVE",
+    "observed_disturbance": "LOW_OBSERVED_DISTURBANCE",
+    "disturbance_intensity_label": "Low Observed Disturbance",
+    "candidate_pixels": 3,
+    "candidate_ratio_pct": 0.02,
+    "is_alert_candidate": false,
+    "cloud_cover_percent": 0.0,
+    "acquisition_id": "S2B_MSIL2A_20261028T053929_N0513_R005_T43SES_20261028T092239",
+    "acquisition_date": "2026-10-28T05:39:29.024000Z",
+    "pre_acquisition_id": "S2C_MSIL2A_20261023T053901_N0513_R005_T43SES_20261023T084205",
+    "pre_acquisition_date": "2026-10-23T05:39:01.025000Z",
+    "evaluation_timestamp": "2026-11-01T22:11:27Z",
+    "data_quality_status": "VALID_BI_TEMPORAL_EVALUATION",
+    "imagery_source": "Copernicus Data Space Ecosystem (Sentinel-2 L2A Dynamically Retrieved)",
+    "cnn_raw_score": 0.9841,
+    "mean_delta_ndvi": 0.0271,
+    "provisional_disclaimer": "PROVISIONAL / NOT SCIENTIFICALLY CALIBRATED. Reflects observed optical canopy/soil surface disturbance only; NOT predictive hazard or confirmed landslide severity.",
+    "status_explanation": "LOW_OBSERVED_RISK: Bi-temporal spectral comparison between 2026-10-23 and 2026-10-28 shows no significant mass-wasting signature across the monitored corridor (mean \u0394NDVI: +0.027). High single-image CNN score (0.9841) was correctly rejected as out-of-distribution saturation.",
+    "detailed_evaluation": {
+      "aoi_metadata": {
+        "aoi_name": "Ramban Panthyal Active Slope Corridor",
+        "bbox": [
+          75.18,
+          33.22,
+          75.21,
+          33.25
+        ],
+        "pixel_dimensions": [
+          333,
+          280
+        ],
+        "spatial_resolution_meters": 10.0
+      },
+      "risk_screening_status": "LOW_OBSERVED_RISK",
+      "final_candidate_status": "LOW_OBSERVED_RISK",
+      "status_explanation": "LOW_OBSERVED_RISK: Bi-temporal spectral comparison between 2026-10-23 and 2026-10-28 shows no significant mass-wasting signature across the monitored corridor (mean \u0394NDVI: +0.027). High single-image CNN score (0.9841) was correctly rejected as out-of-distribution saturation.",
+      "assessment_type": "POST_EVENT_SURFACE_CHANGE_DETECTION",
+      "assessment_type_explanation": "This assessment evaluates surface disturbance between paired satellite observations. It is a post-event disturbance screening tool, NOT a pre-event predictive early warning system, and does NOT forecast the exact timing of future slope failures.",
+      "data_provenance": {
+        "imagery_source": "Copernicus Data Space Ecosystem (Sentinel-2 L2A Dynamically Retrieved)",
+        "is_simulated_fallback": false,
+        "acquisition_date": "2026-10-28T05:39:29.024000Z",
+        "acquisition_id": "S2B_MSIL2A_20261028T053929_N0513_R005_T43SES_20261028T092239",
+        "cloud_cover_percent": 0.0,
+        "data_quality_status": "VALID"
+      },
+      "candidate_alert": {
+        "alert_level": "LOW_OBSERVED_RISK",
+        "alert_triggered": false,
+        "aoi_name": "Ramban Panthyal Active Slope Corridor",
+        "alert_timestamp": "2026-11-01T22:11:42Z",
+        "observation_dates": {
+          "pre_event_image_date": "2026-10-23T05:39:01.025000Z",
+          "post_event_image_date": "2026-10-28T05:39:29.024000Z"
+        },
+        "imagery_source": "Copernicus Data Space Ecosystem (Sentinel-2 L2A Dynamically Retrieved)",
+        "evidence_summary": {
+          "change_pixel_count": 3,
+          "change_pixel_ratio": 0.0,
+          "terrain_hazard_class": "UNKNOWN_TERRAIN_CONTEXT",
+          "mean_slope_degrees": null,
+          "raw_cnn_sigmoid_score": 0.9841,
+          "is_autonomous_alert_suppressed": false
+        },
+        "recommended_actions": [
+          "Maintain routine periodic monitoring."
+        ]
+      },
+      "cnn_inference_diagnostics": {
+        "model_version": "GeoGuard_CNN_v2",
+        "raw_uncalibrated_sigmoid_score": 0.9841,
+        "approximate_pre_sigmoid_logit": 4.125,
+        "decision_threshold": 0.25,
+        "out_of_distribution_detected": false,
+        "out_of_distribution_reasons": [],
+        "model_reliability_status": "EXPERIMENTAL_UNCONFIRMED",
+        "is_autonomous_alert_suppressed": false,
+        "scientific_warning": "Sigmoid score represents uncalibrated mathematical activation, NOT posterior probability. Single-image CNN v2 has 0% validated specificity on Indian healthy vegetation."
+      },
+      "bi_temporal_change_detection": {
+        "status": "NO_SIGNIFICANT_CHANGE",
+        "temporal_metadata": {
+          "pre_event_acquisition_date": "2026-10-23T05:39:01.025000Z",
+          "post_event_acquisition_date": "2026-10-28T05:39:29.024000Z"
+        },
+        "ndvi_analysis": {
+          "pre_event_mean_ndvi": 0.5677,
+          "post_event_mean_ndvi": 0.5949,
+          "mean_delta_ndvi": 0.0271,
+          "ndvi_drop_threshold": -0.15
+        },
+        "reflectance_difference": {
+          "mean_delta_visible": -0.0044,
+          "per_band_deltas": {
+            "B02_delta_mean": -0.00291,
+            "B03_delta_mean": -0.00589,
+            "B04_delta_mean": -0.00449,
+            "B08_delta_mean": -0.00135
+          }
+        },
+        "spatial_change_metrics": {
+          "total_aoi_pixels": 93240,
+          "candidate_change_pixel_count": 3,
+          "candidate_change_pixel_ratio": 0.0,
+          "min_pixels_threshold": 50,
+          "is_significant_change": false
+        },
+        "summary_description": "No significant mass-wasting spectral signature observed between 2026-10-23T05:39:01.025000Z and 2026-10-28T05:39:29.024000Z. Candidate pixels (3) below threshold (50).",
+        "caveats": [
+          "Optical change detection reflects land surface alteration but cannot distinguish landslides from agricultural clearing, intentional logging, or seasonal phenology without terrain context.",
+          "Cloud shadows or subtle atmospheric differences between passes can induce minor localized NDVI fluctuations."
+        ]
+      },
+      "terrain_topography_context": {
+        "status": "UNAVAILABLE",
+        "dem_source": null,
+        "is_parameterized": false,
+        "elevation_context": {
+          "min_elevation_m": null,
+          "mean_elevation_m": null,
+          "max_elevation_m": null
+        },
+        "slope_context": {
+          "mean_slope_degrees": null,
+          "max_slope_degrees": null,
+          "hazard_classification": "UNKNOWN_TERRAIN_CONTEXT"
+        },
+        "note": "Digital Elevation Model (DEM) data was not provided for this pass. Optical change detection continues without topographic constraint."
+      },
+      "limitations_and_missing_evidence": [
+        "Optical Sentinel-2 imagery cannot detect terrain beneath dense cloud cover (frequent during monsoon season).",
+        "Single-image optical classification cannot differentiate historical bare rock cliffs from fresh landslides without bi-temporal change.",
+        "Bi-temporal optical change detection can capture non-landslide surface disturbances (agricultural harvesting, logging, fires).",
+        "This microservice is an experimental geospatial prototype and must NOT be used as an autonomous life-safety early warning system."
+      ]
+    }
+  },
+  "IN-LA-LEH-01": {
+    "aoi_id": "IN-LA-LEH-01",
+    "name": "Leh Indus Valley Highway Corridor",
+    "state": "Ladakh",
+    "region": "Trans-Himalayan Cold Desert",
+    "corridor_code": "NH-01 (Srinagar-Leh-Manali Arterial)",
+    "bbox_wgs84": [
+      77.52,
+      34.15,
+      77.55,
+      34.18
+    ],
+    "center_coords": [
+      77.535,
+      34.165
+    ],
+    "verification_status": "VERIFIED",
+    "verification_source": "Border Roads Organisation (BRO Project Himank); Geological Survey of India Ladakh Atlas",
+    "hazard_classification": "PERMAFROST_SCREE_AND_FAN_WASHOUT",
+    "monitoring_status": "ACTIVE",
+    "observed_disturbance": "LOW_OBSERVED_DISTURBANCE",
+    "disturbance_intensity_label": "Low Observed Disturbance",
+    "candidate_pixels": 3,
+    "candidate_ratio_pct": 0.02,
+    "is_alert_candidate": false,
+    "cloud_cover_percent": 0.01,
+    "acquisition_id": "S2B_MSIL2A_20261028T053929_N0513_R005_T43SGT_20261028T092239",
+    "acquisition_date": "2026-10-28T05:39:29.024000Z",
+    "pre_acquisition_id": "S2B_MSIL2A_20261025T052909_N0513_R105_T43SGT_20261025T073719",
+    "pre_acquisition_date": "2026-10-25T05:29:09.024000Z",
+    "evaluation_timestamp": "2026-11-01T22:11:43Z",
+    "data_quality_status": "VALID_BI_TEMPORAL_EVALUATION",
+    "imagery_source": "Copernicus Data Space Ecosystem (Sentinel-2 L2A Dynamically Retrieved)",
+    "cnn_raw_score": 0.9992,
+    "mean_delta_ndvi": 0.0066,
+    "provisional_disclaimer": "PROVISIONAL / NOT SCIENTIFICALLY CALIBRATED. Reflects observed optical canopy/soil surface disturbance only; NOT predictive hazard or confirmed landslide severity.",
+    "status_explanation": "LOW_OBSERVED_RISK: Bi-temporal spectral comparison between 2026-10-25 and 2026-10-28 shows no significant mass-wasting signature across the monitored corridor (mean \u0394NDVI: +0.007). High single-image CNN score (0.9992) was correctly rejected as out-of-distribution saturation.",
+    "detailed_evaluation": {
+      "aoi_metadata": {
+        "aoi_name": "Leh Indus Valley Highway Corridor",
+        "bbox": [
+          77.52,
+          34.15,
+          77.55,
+          34.18
+        ],
+        "pixel_dimensions": [
+          333,
+          277
+        ],
+        "spatial_resolution_meters": 10.0
+      },
+      "risk_screening_status": "LOW_OBSERVED_RISK",
+      "final_candidate_status": "LOW_OBSERVED_RISK",
+      "status_explanation": "LOW_OBSERVED_RISK: Bi-temporal spectral comparison between 2026-10-25 and 2026-10-28 shows no significant mass-wasting signature across the monitored corridor (mean \u0394NDVI: +0.007). High single-image CNN score (0.9992) was correctly rejected as out-of-distribution saturation.",
+      "assessment_type": "POST_EVENT_SURFACE_CHANGE_DETECTION",
+      "assessment_type_explanation": "This assessment evaluates surface disturbance between paired satellite observations. It is a post-event disturbance screening tool, NOT a pre-event predictive early warning system, and does NOT forecast the exact timing of future slope failures.",
+      "data_provenance": {
+        "imagery_source": "Copernicus Data Space Ecosystem (Sentinel-2 L2A Dynamically Retrieved)",
+        "is_simulated_fallback": false,
+        "acquisition_date": "2026-10-28T05:39:29.024000Z",
+        "acquisition_id": "S2B_MSIL2A_20261028T053929_N0513_R005_T43SGT_20261028T092239",
+        "cloud_cover_percent": 0.01,
+        "data_quality_status": "VALID"
+      },
+      "candidate_alert": {
+        "alert_level": "LOW_OBSERVED_RISK",
+        "alert_triggered": false,
+        "aoi_name": "Leh Indus Valley Highway Corridor",
+        "alert_timestamp": "2026-11-01T22:12:05Z",
+        "observation_dates": {
+          "pre_event_image_date": "2026-10-25T05:29:09.024000Z",
+          "post_event_image_date": "2026-10-28T05:39:29.024000Z"
+        },
+        "imagery_source": "Copernicus Data Space Ecosystem (Sentinel-2 L2A Dynamically Retrieved)",
+        "evidence_summary": {
+          "change_pixel_count": 3,
+          "change_pixel_ratio": 0.0,
+          "terrain_hazard_class": "UNKNOWN_TERRAIN_CONTEXT",
+          "mean_slope_degrees": null,
+          "raw_cnn_sigmoid_score": 0.9992,
+          "is_autonomous_alert_suppressed": false
+        },
+        "recommended_actions": [
+          "Maintain routine periodic monitoring."
+        ]
+      },
+      "cnn_inference_diagnostics": {
+        "model_version": "GeoGuard_CNN_v2",
+        "raw_uncalibrated_sigmoid_score": 0.9992,
+        "approximate_pre_sigmoid_logit": 7.13,
+        "decision_threshold": 0.25,
+        "out_of_distribution_detected": false,
+        "out_of_distribution_reasons": [],
+        "model_reliability_status": "EXPERIMENTAL_UNCONFIRMED",
+        "is_autonomous_alert_suppressed": false,
+        "scientific_warning": "Sigmoid score represents uncalibrated mathematical activation, NOT posterior probability. Single-image CNN v2 has 0% validated specificity on Indian healthy vegetation."
+      },
+      "bi_temporal_change_detection": {
+        "status": "NO_SIGNIFICANT_CHANGE",
+        "temporal_metadata": {
+          "pre_event_acquisition_date": "2026-10-25T05:29:09.024000Z",
+          "post_event_acquisition_date": "2026-10-28T05:39:29.024000Z"
+        },
+        "ndvi_analysis": {
+          "pre_event_mean_ndvi": 0.0611,
+          "post_event_mean_ndvi": 0.0677,
+          "mean_delta_ndvi": 0.0066,
+          "ndvi_drop_threshold": -0.15
+        },
+        "reflectance_difference": {
+          "mean_delta_visible": 0.0119,
+          "per_band_deltas": {
+            "B02_delta_mean": 0.00777,
+            "B03_delta_mean": 0.01061,
+            "B04_delta_mean": 0.01739,
+            "B08_delta_mean": 0.02233
+          }
+        },
+        "spatial_change_metrics": {
+          "total_aoi_pixels": 92241,
+          "candidate_change_pixel_count": 3,
+          "candidate_change_pixel_ratio": 0.0,
+          "min_pixels_threshold": 50,
+          "is_significant_change": false
+        },
+        "summary_description": "No significant mass-wasting spectral signature observed between 2026-10-25T05:29:09.024000Z and 2026-10-28T05:39:29.024000Z. Candidate pixels (3) below threshold (50).",
+        "caveats": [
+          "Optical change detection reflects land surface alteration but cannot distinguish landslides from agricultural clearing, intentional logging, or seasonal phenology without terrain context.",
+          "Cloud shadows or subtle atmospheric differences between passes can induce minor localized NDVI fluctuations."
+        ]
+      },
+      "terrain_topography_context": {
+        "status": "UNAVAILABLE",
+        "dem_source": null,
+        "is_parameterized": false,
+        "elevation_context": {
+          "min_elevation_m": null,
+          "mean_elevation_m": null,
+          "max_elevation_m": null
+        },
+        "slope_context": {
+          "mean_slope_degrees": null,
+          "max_slope_degrees": null,
+          "hazard_classification": "UNKNOWN_TERRAIN_CONTEXT"
+        },
+        "note": "Digital Elevation Model (DEM) data was not provided for this pass. Optical change detection continues without topographic constraint."
+      },
+      "limitations_and_missing_evidence": [
+        "Optical Sentinel-2 imagery cannot detect terrain beneath dense cloud cover (frequent during monsoon season).",
+        "Single-image optical classification cannot differentiate historical bare rock cliffs from fresh landslides without bi-temporal change.",
+        "Bi-temporal optical change detection can capture non-landslide surface disturbances (agricultural harvesting, logging, fires).",
+        "This microservice is an experimental geospatial prototype and must NOT be used as an autonomous life-safety early warning system."
+      ]
+    }
+  },
+  "IN-SK-TEESTA-01": {
+    "aoi_id": "IN-SK-TEESTA-01",
+    "name": "Chungthang Teesta Confluence Corridor",
+    "state": "Sikkim",
+    "region": "Eastern Himalayas",
+    "corridor_code": "North Sikkim Highway (NSH)",
+    "bbox_wgs84": [
+      88.6396,
+      27.598,
+      88.6524,
+      27.61
+    ],
+    "center_coords": [
+      88.646,
+      27.604
+    ],
+    "verification_status": "VERIFIED",
+    "verification_source": "ISRO NRSC Sikkim GLOF Bulletin (Oct 2023); NASA GLC ID 15024; regional_landslides.json",
+    "hazard_classification": "VALLEY_SCOURING_AND_FLANK_COLLAPSE",
+    "monitoring_status": "ACTIVE",
+    "observed_disturbance": "LOW_OBSERVED_DISTURBANCE",
+    "disturbance_intensity_label": "Low Observed Disturbance",
+    "candidate_pixels": 6,
+    "candidate_ratio_pct": 0.04,
+    "is_alert_candidate": false,
+    "cloud_cover_percent": 0.06,
+    "acquisition_id": "S2C_MSIL2A_20261025T043851_N0513_R033_T45RXL_20261025T080412",
+    "acquisition_date": "2026-10-25T04:38:51.025000Z",
+    "pre_acquisition_id": "S2B_MSIL2A_20261020T043819_N0513_R033_T45RXL_20261020T082319",
+    "pre_acquisition_date": "2026-10-20T04:38:19.025000Z",
+    "evaluation_timestamp": "2026-11-01T22:12:06Z",
+    "data_quality_status": "VALID_BI_TEMPORAL_EVALUATION",
+    "imagery_source": "Copernicus Data Space Ecosystem (Sentinel-2 L2A Dynamically Retrieved)",
+    "cnn_raw_score": 1.0,
+    "mean_delta_ndvi": 0.0107,
+    "provisional_disclaimer": "PROVISIONAL / NOT SCIENTIFICALLY CALIBRATED. Reflects observed optical canopy/soil surface disturbance only; NOT predictive hazard or confirmed landslide severity.",
+    "status_explanation": "LOW_OBSERVED_RISK: Bi-temporal spectral comparison between 2026-10-20 and 2026-10-25 shows no significant mass-wasting signature across the monitored corridor (mean \u0394NDVI: +0.011). High single-image CNN score (1.0000) was correctly rejected as out-of-distribution saturation.",
+    "detailed_evaluation": {
+      "aoi_metadata": {
+        "aoi_name": "Chungthang Teesta Confluence Corridor",
+        "bbox": [
+          88.6396,
+          27.598,
+          88.6524,
+          27.61
+        ],
+        "pixel_dimensions": [
+          133,
+          128
+        ],
+        "spatial_resolution_meters": 10.0
+      },
+      "risk_screening_status": "LOW_OBSERVED_RISK",
+      "final_candidate_status": "LOW_OBSERVED_RISK",
+      "status_explanation": "LOW_OBSERVED_RISK: Bi-temporal spectral comparison between 2026-10-20 and 2026-10-25 shows no significant mass-wasting signature across the monitored corridor (mean \u0394NDVI: +0.011). High single-image CNN score (1.0000) was correctly rejected as out-of-distribution saturation.",
+      "assessment_type": "POST_EVENT_SURFACE_CHANGE_DETECTION",
+      "assessment_type_explanation": "This assessment evaluates surface disturbance between paired satellite observations. It is a post-event disturbance screening tool, NOT a pre-event predictive early warning system, and does NOT forecast the exact timing of future slope failures.",
+      "data_provenance": {
+        "imagery_source": "Copernicus Data Space Ecosystem (Sentinel-2 L2A Dynamically Retrieved)",
+        "is_simulated_fallback": false,
+        "acquisition_date": "2026-10-25T04:38:51.025000Z",
+        "acquisition_id": "S2C_MSIL2A_20261025T043851_N0513_R033_T45RXL_20261025T080412",
+        "cloud_cover_percent": 0.06,
+        "data_quality_status": "VALID"
+      },
+      "candidate_alert": {
+        "alert_level": "LOW_OBSERVED_RISK",
+        "alert_triggered": false,
+        "aoi_name": "Chungthang Teesta Confluence Corridor",
+        "alert_timestamp": "2026-11-01T22:12:25Z",
+        "observation_dates": {
+          "pre_event_image_date": "2026-10-20T04:38:19.025000Z",
+          "post_event_image_date": "2026-10-25T04:38:51.025000Z"
+        },
+        "imagery_source": "Copernicus Data Space Ecosystem (Sentinel-2 L2A Dynamically Retrieved)",
+        "evidence_summary": {
+          "change_pixel_count": 6,
+          "change_pixel_ratio": 0.0004,
+          "terrain_hazard_class": "UNKNOWN_TERRAIN_CONTEXT",
+          "mean_slope_degrees": null,
+          "raw_cnn_sigmoid_score": 1.0,
+          "is_autonomous_alert_suppressed": false
+        },
+        "recommended_actions": [
+          "Maintain routine periodic monitoring."
+        ]
+      },
+      "cnn_inference_diagnostics": {
+        "model_version": "GeoGuard_CNN_v2",
+        "raw_uncalibrated_sigmoid_score": 1.0,
+        "approximate_pre_sigmoid_logit": 13.816,
+        "decision_threshold": 0.25,
+        "out_of_distribution_detected": false,
+        "out_of_distribution_reasons": [],
+        "model_reliability_status": "EXPERIMENTAL_UNCONFIRMED",
+        "is_autonomous_alert_suppressed": false,
+        "scientific_warning": "Sigmoid score represents uncalibrated mathematical activation, NOT posterior probability. Single-image CNN v2 has 0% validated specificity on Indian healthy vegetation."
+      },
+      "bi_temporal_change_detection": {
+        "status": "NO_SIGNIFICANT_CHANGE",
+        "temporal_metadata": {
+          "pre_event_acquisition_date": "2026-10-20T04:38:19.025000Z",
+          "post_event_acquisition_date": "2026-10-25T04:38:51.025000Z"
+        },
+        "ndvi_analysis": {
+          "pre_event_mean_ndvi": 0.6253,
+          "post_event_mean_ndvi": 0.6359,
+          "mean_delta_ndvi": 0.0107,
+          "ndvi_drop_threshold": -0.15
+        },
+        "reflectance_difference": {
+          "mean_delta_visible": -0.0037,
+          "per_band_deltas": {
+            "B02_delta_mean": -0.01039,
+            "B03_delta_mean": -0.00231,
+            "B04_delta_mean": 0.00162,
+            "B08_delta_mean": -0.00225
+          }
+        },
+        "spatial_change_metrics": {
+          "total_aoi_pixels": 17024,
+          "candidate_change_pixel_count": 6,
+          "candidate_change_pixel_ratio": 0.0004,
+          "min_pixels_threshold": 50,
+          "is_significant_change": false
+        },
+        "summary_description": "No significant mass-wasting spectral signature observed between 2026-10-20T04:38:19.025000Z and 2026-10-25T04:38:51.025000Z. Candidate pixels (6) below threshold (50).",
+        "caveats": [
+          "Optical change detection reflects land surface alteration but cannot distinguish landslides from agricultural clearing, intentional logging, or seasonal phenology without terrain context.",
+          "Cloud shadows or subtle atmospheric differences between passes can induce minor localized NDVI fluctuations."
+        ]
+      },
+      "terrain_topography_context": {
+        "status": "UNAVAILABLE",
+        "dem_source": null,
+        "is_parameterized": false,
+        "elevation_context": {
+          "min_elevation_m": null,
+          "mean_elevation_m": null,
+          "max_elevation_m": null
+        },
+        "slope_context": {
+          "mean_slope_degrees": null,
+          "max_slope_degrees": null,
+          "hazard_classification": "UNKNOWN_TERRAIN_CONTEXT"
+        },
+        "note": "Digital Elevation Model (DEM) data was not provided for this pass. Optical change detection continues without topographic constraint."
+      },
+      "limitations_and_missing_evidence": [
+        "Optical Sentinel-2 imagery cannot detect terrain beneath dense cloud cover (frequent during monsoon season).",
+        "Single-image optical classification cannot differentiate historical bare rock cliffs from fresh landslides without bi-temporal change.",
+        "Bi-temporal optical change detection can capture non-landslide surface disturbances (agricultural harvesting, logging, fires).",
+        "This microservice is an experimental geospatial prototype and must NOT be used as an autonomous life-safety early warning system."
+      ]
+    }
+  },
+  "IN-AR-TAWANG-01": {
+    "aoi_id": "IN-AR-TAWANG-01",
+    "name": "Tawang-Bomdila B-C-T Highway Corridor",
+    "state": "Arunachal Pradesh",
+    "region": "Eastern Himalayas",
+    "corridor_code": "BCT Strategic Highway (NH-13)",
+    "bbox_wgs84": [
+      91.85,
+      27.57,
+      91.88,
+      27.6
+    ],
+    "center_coords": [
+      91.865,
+      27.585
+    ],
+    "verification_status": "VERIFIED",
+    "verification_source": "Border Roads Organisation (BRO Project Vartak); Ministry of Road Transport and Highways (MoRTH)",
+    "hazard_classification": "TRANSLATIONAL_REGOLITH_FAILURES",
+    "monitoring_status": "ACTIVE",
+    "observed_disturbance": "INSUFFICIENT_DATA",
+    "disturbance_intensity_label": "Insufficient Data / Cloud Obscured",
+    "candidate_pixels": 47,
+    "candidate_ratio_pct": 0.0,
+    "is_alert_candidate": false,
+    "cloud_cover_percent": 21.64,
+    "acquisition_id": "S2C_MSIL2A_20261101T042921_N0513_R133_T46RCR_20261101T074346",
+    "acquisition_date": "2026-11-01T04:29:21.025000Z",
+    "pre_acquisition_id": "S2B_MSIL2A_20261027T042859_N0513_R133_T46RCR_20261027T122615",
+    "pre_acquisition_date": "2026-10-27T04:28:59.024000Z",
+    "evaluation_timestamp": "2026-11-01T22:12:25Z",
+    "data_quality_status": "VALID_BI_TEMPORAL_EVALUATION",
+    "imagery_source": "Copernicus Data Space Ecosystem (Sentinel-2 L2A Dynamically Retrieved)",
+    "cnn_raw_score": 0.9999,
+    "mean_delta_ndvi": -0.018,
+    "provisional_disclaimer": "PROVISIONAL / NOT SCIENTIFICALLY CALIBRATED. Optical observations obscured or baseline missing.",
+    "status_explanation": "LOW_OBSERVED_RISK: Bi-temporal spectral comparison between 2026-10-27 and 2026-11-01 shows no significant mass-wasting signature across the monitored corridor (mean \u0394NDVI: -0.018). High single-image CNN score (0.9999) was correctly rejected as out-of-distribution saturation.",
+    "detailed_evaluation": {
+      "aoi_metadata": {
+        "aoi_name": "Tawang-Bomdila B-C-T Highway Corridor",
+        "bbox": [
+          91.85,
+          27.57,
+          91.88,
+          27.6
+        ],
+        "pixel_dimensions": [
+          333,
+          296
+        ],
+        "spatial_resolution_meters": 10.0
+      },
+      "risk_screening_status": "LOW_OBSERVED_RISK",
+      "final_candidate_status": "LOW_OBSERVED_RISK",
+      "status_explanation": "LOW_OBSERVED_RISK: Bi-temporal spectral comparison between 2026-10-27 and 2026-11-01 shows no significant mass-wasting signature across the monitored corridor (mean \u0394NDVI: -0.018). High single-image CNN score (0.9999) was correctly rejected as out-of-distribution saturation.",
+      "assessment_type": "POST_EVENT_SURFACE_CHANGE_DETECTION",
+      "assessment_type_explanation": "This assessment evaluates surface disturbance between paired satellite observations. It is a post-event disturbance screening tool, NOT a pre-event predictive early warning system, and does NOT forecast the exact timing of future slope failures.",
+      "data_provenance": {
+        "imagery_source": "Copernicus Data Space Ecosystem (Sentinel-2 L2A Dynamically Retrieved)",
+        "is_simulated_fallback": false,
+        "acquisition_date": "2026-11-01T04:29:21.025000Z",
+        "acquisition_id": "S2C_MSIL2A_20261101T042921_N0513_R133_T46RCR_20261101T074346",
+        "cloud_cover_percent": 21.64,
+        "data_quality_status": "VALID"
+      },
+      "candidate_alert": {
+        "alert_level": "LOW_OBSERVED_RISK",
+        "alert_triggered": false,
+        "aoi_name": "Tawang-Bomdila B-C-T Highway Corridor",
+        "alert_timestamp": "2026-11-01T22:12:42Z",
+        "observation_dates": {
+          "pre_event_image_date": "2026-10-27T04:28:59.024000Z",
+          "post_event_image_date": "2026-11-01T04:29:21.025000Z"
+        },
+        "imagery_source": "Copernicus Data Space Ecosystem (Sentinel-2 L2A Dynamically Retrieved)",
+        "evidence_summary": {
+          "change_pixel_count": 47,
+          "change_pixel_ratio": 0.0005,
+          "terrain_hazard_class": "UNKNOWN_TERRAIN_CONTEXT",
+          "mean_slope_degrees": null,
+          "raw_cnn_sigmoid_score": 0.9999,
+          "is_autonomous_alert_suppressed": false
+        },
+        "recommended_actions": [
+          "Maintain routine periodic monitoring."
+        ]
+      },
+      "cnn_inference_diagnostics": {
+        "model_version": "GeoGuard_CNN_v2",
+        "raw_uncalibrated_sigmoid_score": 0.9999,
+        "approximate_pre_sigmoid_logit": 9.21,
+        "decision_threshold": 0.25,
+        "out_of_distribution_detected": false,
+        "out_of_distribution_reasons": [],
+        "model_reliability_status": "EXPERIMENTAL_UNCONFIRMED",
+        "is_autonomous_alert_suppressed": false,
+        "scientific_warning": "Sigmoid score represents uncalibrated mathematical activation, NOT posterior probability. Single-image CNN v2 has 0% validated specificity on Indian healthy vegetation."
+      },
+      "bi_temporal_change_detection": {
+        "status": "NO_SIGNIFICANT_CHANGE",
+        "temporal_metadata": {
+          "pre_event_acquisition_date": "2026-10-27T04:28:59.024000Z",
+          "post_event_acquisition_date": "2026-11-01T04:29:21.025000Z"
+        },
+        "ndvi_analysis": {
+          "pre_event_mean_ndvi": 0.671,
+          "post_event_mean_ndvi": 0.653,
+          "mean_delta_ndvi": -0.018,
+          "ndvi_drop_threshold": -0.15
+        },
+        "reflectance_difference": {
+          "mean_delta_visible": -0.0003,
+          "per_band_deltas": {
+            "B02_delta_mean": 0.00078,
+            "B03_delta_mean": 0.00019,
+            "B04_delta_mean": -0.00191,
+            "B08_delta_mean": -0.01838
+          }
+        },
+        "spatial_change_metrics": {
+          "total_aoi_pixels": 98568,
+          "candidate_change_pixel_count": 47,
+          "candidate_change_pixel_ratio": 0.0005,
+          "min_pixels_threshold": 50,
+          "is_significant_change": false
+        },
+        "summary_description": "No significant mass-wasting spectral signature observed between 2026-10-27T04:28:59.024000Z and 2026-11-01T04:29:21.025000Z. Candidate pixels (47) below threshold (50).",
+        "caveats": [
+          "Optical change detection reflects land surface alteration but cannot distinguish landslides from agricultural clearing, intentional logging, or seasonal phenology without terrain context.",
+          "Cloud shadows or subtle atmospheric differences between passes can induce minor localized NDVI fluctuations."
+        ]
+      },
+      "terrain_topography_context": {
+        "status": "UNAVAILABLE",
+        "dem_source": null,
+        "is_parameterized": false,
+        "elevation_context": {
+          "min_elevation_m": null,
+          "mean_elevation_m": null,
+          "max_elevation_m": null
+        },
+        "slope_context": {
+          "mean_slope_degrees": null,
+          "max_slope_degrees": null,
+          "hazard_classification": "UNKNOWN_TERRAIN_CONTEXT"
+        },
+        "note": "Digital Elevation Model (DEM) data was not provided for this pass. Optical change detection continues without topographic constraint."
+      },
+      "limitations_and_missing_evidence": [
+        "Optical Sentinel-2 imagery cannot detect terrain beneath dense cloud cover (frequent during monsoon season).",
+        "Single-image optical classification cannot differentiate historical bare rock cliffs from fresh landslides without bi-temporal change.",
+        "Bi-temporal optical change detection can capture non-landslide surface disturbances (agricultural harvesting, logging, fires).",
+        "This microservice is an experimental geospatial prototype and must NOT be used as an autonomous life-safety early warning system."
+      ]
+    }
+  }
+}

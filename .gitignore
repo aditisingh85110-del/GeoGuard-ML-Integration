@@ -8,6 +8,9 @@ env/
 venv/
 ENV/
 .env
+**/.env
+**/.env.*
+!**/.env.example
 
 # Streamlit
 .streamlit/secrets.toml
@@ -20,10 +23,17 @@ Thumbs.db
 
 # Database
 *.db
+*.sqlite
+*.sqlite3
 data/*.db
 cloudflared.exe
+
+# Datasets and Large Raw Files
+ml_service/data/raw/
+*.h5
 
 # Scratch and temp files
 scratch/
 *.log
-
+ml_service/logs/
+.pytest_cache/

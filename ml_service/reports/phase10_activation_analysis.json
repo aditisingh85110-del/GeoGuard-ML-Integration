@@ -1,0 +1,554 @@
+{
+  "model_architecture_summary": {
+    "total_layers": 28,
+    "final_dense_kernel_shape": [
+      64,
+      1
+    ],
+    "final_dense_bias": -0.03193027526140213,
+    "final_dense_weights_stats": {
+      "mean": 0.01063,
+      "std": 0.17461,
+      "positive_weights_ratio": 0.5156,
+      "negative_weights_ratio": 0.4844
+    }
+  },
+  "layer_activations_test_set": {
+    "conv1_1": {
+      "class_0_normal": {
+        "mean": 0.01755,
+        "std": 0.54251,
+        "min": -6.60272,
+        "max": 4.58071,
+        "relu_sparsity_ratio": 0.0
+      },
+      "class_1_landslide": {
+        "mean": 0.00137,
+        "std": 0.593,
+        "min": -6.45657,
+        "max": 4.8643,
+        "relu_sparsity_ratio": 0.0
+      }
+    },
+    "relu1_1": {
+      "class_0_normal": {
+        "mean": 0.32248,
+        "std": 0.50154,
+        "min": 0.0,
+        "max": 6.81492,
+        "relu_sparsity_ratio": 0.5007
+      },
+      "class_1_landslide": {
+        "mean": 0.32092,
+        "std": 0.54764,
+        "min": 0.0,
+        "max": 7.02394,
+        "relu_sparsity_ratio": 0.5183
+      }
+    },
+    "pool1": {
+      "class_0_normal": {
+        "mean": 0.32228,
+        "std": 0.54992,
+        "min": 0.0,
+        "max": 7.06183,
+        "relu_sparsity_ratio": 0.496
+      },
+      "class_1_landslide": {
+        "mean": 0.39523,
+        "std": 0.68463,
+        "min": 0.0,
+        "max": 7.32416,
+        "relu_sparsity_ratio": 0.4682
+      }
+    },
+    "conv2_2": {
+      "class_0_normal": {
+        "mean": 0.00091,
+        "std": 1.01431,
+        "min": -12.55403,
+        "max": 15.01982,
+        "relu_sparsity_ratio": 0.0
+      },
+      "class_1_landslide": {
+        "mean": 0.09329,
+        "std": 1.47727,
+        "min": -15.10921,
+        "max": 17.99067,
+        "relu_sparsity_ratio": 0.0
+      }
+    },
+    "relu2_2": {
+      "class_0_normal": {
+        "mean": 0.21441,
+        "std": 0.51591,
+        "min": 0.0,
+        "max": 8.1466,
+        "relu_sparsity_ratio": 0.6156
+      },
+      "class_1_landslide": {
+        "mean": 0.31691,
+        "std": 0.72488,
+        "min": 0.0,
+        "max": 10.69871,
+        "relu_sparsity_ratio": 0.5867
+      }
+    },
+    "pool2": {
+      "class_0_normal": {
+        "mean": 0.26276,
+        "std": 0.58054,
+        "min": 0.0,
+        "max": 8.1466,
+        "relu_sparsity_ratio": 0.5659
+      },
+      "class_1_landslide": {
+        "mean": 0.42546,
+        "std": 0.86543,
+        "min": 0.0,
+        "max": 10.69871,
+        "relu_sparsity_ratio": 0.5096
+      }
+    },
+    "conv3_1": {
+      "class_0_normal": {
+        "mean": -0.03713,
+        "std": 1.38829,
+        "min": -18.36621,
+        "max": 17.15366,
+        "relu_sparsity_ratio": 0.0
+      },
+      "class_1_landslide": {
+        "mean": 0.02103,
+        "std": 2.32641,
+        "min": -21.65351,
+        "max": 20.4806,
+        "relu_sparsity_ratio": 0.0
+      }
+    },
+    "relu3_1": {
+      "class_0_normal": {
+        "mean": 0.24997,
+        "std": 0.47659,
+        "min": 0.0,
+        "max": 8.82733,
+        "relu_sparsity_ratio": 0.5292
+      },
+      "class_1_landslide": {
+        "mean": 0.36291,
+        "std": 0.73898,
+        "min": 0.0,
+        "max": 10.57125,
+        "relu_sparsity_ratio": 0.5153
+      }
+    },
+    "pool3": {
+      "class_0_normal": {
+        "mean": 0.3001,
+        "std": 0.54777,
+        "min": 0.0,
+        "max": 8.82733,
+        "relu_sparsity_ratio": 0.487
+      },
+      "class_1_landslide": {
+        "mean": 0.49482,
+        "std": 0.90195,
+        "min": 0.0,
+        "max": 10.57125,
+        "relu_sparsity_ratio": 0.4308
+      }
+    },
+    "gap": {
+      "class_0_normal": {
+        "mean": 0.3001,
+        "std": 0.34113,
+        "min": 0.0,
+        "max": 4.61927,
+        "relu_sparsity_ratio": 0.0841
+      },
+      "class_1_landslide": {
+        "mean": 0.49482,
+        "std": 0.42629,
+        "min": 0.0,
+        "max": 3.33316,
+        "relu_sparsity_ratio": 0.002
+      }
+    },
+    "dense1": {
+      "class_0_normal": {
+        "mean": -0.03375,
+        "std": 0.65238,
+        "min": -3.16278,
+        "max": 4.449,
+        "relu_sparsity_ratio": 0.0
+      },
+      "class_1_landslide": {
+        "mean": 0.03346,
+        "std": 1.10128,
+        "min": -5.99889,
+        "max": 7.02149,
+        "relu_sparsity_ratio": 0.0
+      }
+    },
+    "relu_dense": {
+      "class_0_normal": {
+        "mean": 0.26015,
+        "std": 0.45272,
+        "min": 0.0,
+        "max": 5.46262,
+        "relu_sparsity_ratio": 0.5409
+      },
+      "class_1_landslide": {
+        "mean": 0.35755,
+        "std": 0.61752,
+        "min": 0.0,
+        "max": 4.82537,
+        "relu_sparsity_ratio": 0.4864
+      }
+    },
+    "landslide_probability": {
+      "class_0_normal": {
+        "mean": 0.33265,
+        "std": 0.26852,
+        "min": 0.06427,
+        "max": 0.97772,
+        "relu_sparsity_ratio": 0.0
+      },
+      "class_1_landslide": {
+        "mean": 0.76514,
+        "std": 0.24369,
+        "min": 0.2412,
+        "max": 0.99993,
+        "relu_sparsity_ratio": 0.0
+      }
+    }
+  },
+  "layer_activations_phase9": {
+    "conv1_1": {
+      "phase9_positive": {
+        "mean": -0.12936,
+        "std": 2.04585,
+        "min": -6.23843,
+        "max": 4.63979,
+        "relu_sparsity_ratio": 0.0
+      },
+      "phase9_negative": {
+        "mean": 0.08921,
+        "std": 1.15946,
+        "min": -4.60438,
+        "max": 3.98017,
+        "relu_sparsity_ratio": 0.0
+      }
+    },
+    "relu1_1": {
+      "phase9_positive": {
+        "mean": 1.24114,
+        "std": 1.5239,
+        "min": 0.0,
+        "max": 6.69921,
+        "relu_sparsity_ratio": 0.477
+      },
+      "phase9_negative": {
+        "mean": 0.89091,
+        "std": 1.15723,
+        "min": 0.0,
+        "max": 6.76833,
+        "relu_sparsity_ratio": 0.4677
+      }
+    },
+    "pool1": {
+      "phase9_positive": {
+        "mean": 2.06697,
+        "std": 1.95761,
+        "min": 0.0,
+        "max": 6.79607,
+        "relu_sparsity_ratio": 0.343
+      },
+      "phase9_negative": {
+        "mean": 0.88162,
+        "std": 1.1725,
+        "min": 0.0,
+        "max": 7.32768,
+        "relu_sparsity_ratio": 0.4505
+      }
+    },
+    "conv2_2": {
+      "phase9_positive": {
+        "mean": 0.87615,
+        "std": 6.2778,
+        "min": -13.38238,
+        "max": 15.62394,
+        "relu_sparsity_ratio": 0.0
+      },
+      "phase9_negative": {
+        "mean": 0.3317,
+        "std": 1.7683,
+        "min": -4.95123,
+        "max": 5.33755,
+        "relu_sparsity_ratio": 0.0
+      }
+    },
+    "relu2_2": {
+      "phase9_positive": {
+        "mean": 2.30544,
+        "std": 2.48184,
+        "min": 0.0,
+        "max": 8.39057,
+        "relu_sparsity_ratio": 0.4109
+      },
+      "phase9_negative": {
+        "mean": 0.54392,
+        "std": 0.65378,
+        "min": 0.0,
+        "max": 3.16623,
+        "relu_sparsity_ratio": 0.435
+      }
+    },
+    "pool2": {
+      "phase9_positive": {
+        "mean": 2.4213,
+        "std": 2.53844,
+        "min": 0.0,
+        "max": 8.39057,
+        "relu_sparsity_ratio": 0.4023
+      },
+      "phase9_negative": {
+        "mean": 0.66632,
+        "std": 0.7186,
+        "min": 0.0,
+        "max": 3.16623,
+        "relu_sparsity_ratio": 0.385
+      }
+    },
+    "conv3_1": {
+      "phase9_positive": {
+        "mean": -0.27598,
+        "std": 8.29517,
+        "min": -16.70667,
+        "max": 17.15185,
+        "relu_sparsity_ratio": 0.0
+      },
+      "phase9_negative": {
+        "mean": 0.20158,
+        "std": 2.67336,
+        "min": -6.11168,
+        "max": 5.85093,
+        "relu_sparsity_ratio": 0.0
+      }
+    },
+    "relu3_1": {
+      "phase9_positive": {
+        "mean": 1.80613,
+        "std": 2.2841,
+        "min": 0.0,
+        "max": 9.3222,
+        "relu_sparsity_ratio": 0.5142
+      },
+      "phase9_negative": {
+        "mean": 0.52275,
+        "std": 0.63247,
+        "min": 0.0,
+        "max": 2.79616,
+        "relu_sparsity_ratio": 0.4655
+      }
+    },
+    "pool3": {
+      "phase9_positive": {
+        "mean": 1.91629,
+        "std": 2.36547,
+        "min": 0.0,
+        "max": 9.3222,
+        "relu_sparsity_ratio": 0.5045
+      },
+      "phase9_negative": {
+        "mean": 0.58802,
+        "std": 0.67198,
+        "min": 0.0,
+        "max": 2.79616,
+        "relu_sparsity_ratio": 0.4321
+      }
+    },
+    "gap": {
+      "phase9_positive": {
+        "mean": 1.91629,
+        "std": 2.35551,
+        "min": 0.0,
+        "max": 8.91588,
+        "relu_sparsity_ratio": 0.3733
+      },
+      "phase9_negative": {
+        "mean": 0.58802,
+        "std": 0.66596,
+        "min": 0.0,
+        "max": 2.35734,
+        "relu_sparsity_ratio": 0.132
+      }
+    },
+    "dense1": {
+      "phase9_positive": {
+        "mean": 0.18884,
+        "std": 4.62182,
+        "min": -9.6108,
+        "max": 11.99193,
+        "relu_sparsity_ratio": 0.0
+      },
+      "phase9_negative": {
+        "mean": 0.22909,
+        "std": 1.64046,
+        "min": -2.96682,
+        "max": 3.8922,
+        "relu_sparsity_ratio": 0.0
+      }
+    },
+    "relu_dense": {
+      "phase9_positive": {
+        "mean": 2.3909,
+        "std": 3.1325,
+        "min": 0.0,
+        "max": 10.94764,
+        "relu_sparsity_ratio": 0.4931
+      },
+      "phase9_negative": {
+        "mean": 0.825,
+        "std": 0.88359,
+        "min": 0.0,
+        "max": 2.80827,
+        "relu_sparsity_ratio": 0.3438
+      }
+    },
+    "landslide_probability": {
+      "phase9_positive": {
+        "mean": 0.99999,
+        "std": 0.0,
+        "min": 0.99999,
+        "max": 0.99999,
+        "relu_sparsity_ratio": 0.0
+      },
+      "phase9_negative": {
+        "mean": 0.99734,
+        "std": 0.00011,
+        "min": 0.99718,
+        "max": 0.99761,
+        "relu_sparsity_ratio": 0.0
+      }
+    }
+  },
+  "logit_and_sigmoid_saturation_comparison": {
+    "test_set_normal_class0": {
+      "sample_count": 29,
+      "logits_pre_sigmoid": {
+        "count": 29,
+        "nan_count": 0,
+        "inf_count": 0,
+        "mean": -0.7498,
+        "std": 1.58819,
+        "min": -2.67826,
+        "p25": -1.6821,
+        "median": -1.2563,
+        "p75": -0.41553,
+        "max": 3.78148
+      },
+      "sigmoid_output": {
+        "count": 29,
+        "nan_count": 0,
+        "inf_count": 0,
+        "mean": 0.33265,
+        "std": 0.26852,
+        "min": 0.06427,
+        "p25": 0.15682,
+        "median": 0.22161,
+        "p75": 0.39759,
+        "max": 0.97772
+      },
+      "predictions_ge_threshold_025_ratio": 0.3793103448275862
+    },
+    "test_set_landslide_class1": {
+      "sample_count": 31,
+      "logits_pre_sigmoid": {
+        "count": 31,
+        "nan_count": 0,
+        "inf_count": 0,
+        "mean": 2.18043,
+        "std": 2.39785,
+        "min": -1.14609,
+        "p25": 0.49017,
+        "median": 1.71943,
+        "p75": 3.45067,
+        "max": 9.61978
+      },
+      "sigmoid_output": {
+        "count": 31,
+        "nan_count": 0,
+        "inf_count": 0,
+        "mean": 0.76514,
+        "std": 0.24369,
+        "min": 0.2412,
+        "p25": 0.6195,
+        "median": 0.84806,
+        "p75": 0.96918,
+        "max": 0.99993
+      },
+      "predictions_ge_threshold_025_ratio": 0.9354838709677419
+    },
+    "phase9_verified_positives": {
+      "sample_count": 9,
+      "logits_pre_sigmoid": {
+        "count": 9,
+        "nan_count": 0,
+        "inf_count": 0,
+        "mean": 11.77528,
+        "std": 0.02351,
+        "min": 11.73676,
+        "p25": 11.75358,
+        "median": 11.77552,
+        "p75": 11.78658,
+        "max": 11.81291
+      },
+      "sigmoid_output": {
+        "count": 9,
+        "nan_count": 0,
+        "inf_count": 0,
+        "mean": 0.99999,
+        "std": 0.0,
+        "min": 0.99999,
+        "p25": 0.99999,
+        "median": 0.99999,
+        "p75": 0.99999,
+        "max": 0.99999
+      },
+      "predictions_ge_threshold_025_ratio": 1.0
+    },
+    "phase9_verified_negatives": {
+      "sample_count": 10,
+      "logits_pre_sigmoid": {
+        "count": 10,
+        "nan_count": 0,
+        "inf_count": 0,
+        "mean": 5.92787,
+        "std": 0.04309,
+        "min": 5.86788,
+        "p25": 5.90219,
+        "median": 5.91833,
+        "p75": 5.94289,
+        "max": 6.03572
+      },
+      "sigmoid_output": {
+        "count": 10,
+        "nan_count": 0,
+        "inf_count": 0,
+        "mean": 0.99734,
+        "std": 0.00011,
+        "min": 0.99718,
+        "p25": 0.99727,
+        "median": 0.99732,
+        "p75": 0.99738,
+        "max": 0.99761
+      },
+      "predictions_ge_threshold_025_ratio": 1.0
+    }
+  },
+  "root_cause_deduction": {
+    "primary_mechanism": "Feature Activation Shift into Final Dense Layer Positive Saturation",
+    "mathematical_explanation": "The final Dense layer bias is -0.0319. On Phase 9 negative patches, the relu_dense activations produce a mean pre-activation logit of 5.9279. Since sigmoid(z) with z ~ 5.93 evaluates to 0.99734, the sigmoid output saturates at 0.997+ across all 10 negative patches."
+  }
+}

@@ -1,0 +1,479 @@
+{
+  "patch_inventory_audit": {
+    "total_patch_records": 20,
+    "verified_positive_count": 9,
+    "verified_negative_count": 10,
+    "unverified_candidate_count": 1
+  },
+  "negative_samples_stability_audit": {
+    "total_negatives_evaluated": 10,
+    "independently_verified_stability_count": 10,
+    "audit_conclusion": "All 10 negative patches have documented stability evidence (official disaster grading / undisturbed canopy). None contain landslide movement."
+  },
+  "event_level_vs_patch_level_separation": {
+    "total_events": 4,
+    "events_with_at_least_one_detection": 4,
+    "event_level_recall": 1.0,
+    "event_level_precision_note": "Every regional AOI triggered false alarm clusters on stable non-landslide sectors."
+  },
+  "regional_metrics_recalculation": {
+    "western_himalayas": {
+      "recalculated_confusion_matrix": {
+        "TP": 3,
+        "FP": 3,
+        "TN": 0,
+        "FN": 0
+      },
+      "recalculated_metrics": {
+        "precision": 0.5,
+        "precision_95ci": [
+          0.1876,
+          0.8124
+        ],
+        "recall": 1.0,
+        "recall_95ci": [
+          0.4385,
+          1.0
+        ],
+        "specificity": 0.0,
+        "specificity_95ci": [
+          0.0,
+          0.5615
+        ],
+        "f1_score": 0.6667,
+        "false_positive_rate": 1.0,
+        "false_negative_rate": 0.0
+      },
+      "stored_metrics_match": true
+    },
+    "eastern_himalayas": {
+      "recalculated_confusion_matrix": {
+        "TP": 2,
+        "FP": 2,
+        "TN": 0,
+        "FN": 0
+      },
+      "recalculated_metrics": {
+        "precision": 0.5,
+        "precision_95ci": [
+          0.15,
+          0.85
+        ],
+        "recall": 1.0,
+        "recall_95ci": [
+          0.3424,
+          1.0
+        ],
+        "specificity": 0.0,
+        "specificity_95ci": [
+          0.0,
+          0.6576
+        ],
+        "f1_score": 0.6667,
+        "false_positive_rate": 1.0,
+        "false_negative_rate": 0.0
+      },
+      "stored_metrics_match": true
+    },
+    "northern_western_ghats": {
+      "recalculated_confusion_matrix": {
+        "TP": 1,
+        "FP": 2,
+        "TN": 0,
+        "FN": 0
+      },
+      "recalculated_metrics": {
+        "precision": 0.3333,
+        "precision_95ci": [
+          0.0615,
+          0.7923
+        ],
+        "recall": 1.0,
+        "recall_95ci": [
+          0.2065,
+          1.0
+        ],
+        "specificity": 0.0,
+        "specificity_95ci": [
+          0.0,
+          0.6576
+        ],
+        "f1_score": 0.5,
+        "false_positive_rate": 1.0,
+        "false_negative_rate": 0.0
+      },
+      "stored_metrics_match": true
+    },
+    "southern_western_ghats": {
+      "recalculated_confusion_matrix": {
+        "TP": 3,
+        "FP": 3,
+        "TN": 0,
+        "FN": 0
+      },
+      "recalculated_metrics": {
+        "precision": 0.5,
+        "precision_95ci": [
+          0.1876,
+          0.8124
+        ],
+        "recall": 1.0,
+        "recall_95ci": [
+          0.4385,
+          1.0
+        ],
+        "specificity": 0.0,
+        "specificity_95ci": [
+          0.0,
+          0.5615
+        ],
+        "f1_score": 0.6667,
+        "false_positive_rate": 1.0,
+        "false_negative_rate": 0.0
+      },
+      "stored_metrics_match": true
+    }
+  },
+  "all_19_patch_records": [
+    {
+      "region_id": "western_himalayas",
+      "patch_id": "WH_POS_01_DETACHMENT",
+      "ground_truth_label": "POSITIVE",
+      "center_lat": 30.3785,
+      "center_lon": 79.732,
+      "bbox": [
+        79.7256,
+        30.3725,
+        79.7384,
+        30.3845
+      ],
+      "ground_truth_evidence": "Ronti Peak scarp and rock-ice avalanche detachment zone mapped by EMSR501 and GSI",
+      "model_sigmoid_output": 1.0,
+      "binary_prediction": 1,
+      "is_correct": true
+    },
+    {
+      "region_id": "western_himalayas",
+      "patch_id": "WH_POS_02_RAUNTHI_CORRIDOR",
+      "ground_truth_label": "POSITIVE",
+      "center_lat": 30.415,
+      "center_lon": 79.728,
+      "bbox": [
+        79.7216,
+        30.409,
+        79.7344,
+        30.421
+      ],
+      "ground_truth_evidence": "Raunthi Gad gorge active debris scouring zone",
+      "model_sigmoid_output": 1.0,
+      "binary_prediction": 1,
+      "is_correct": true
+    },
+    {
+      "region_id": "western_himalayas",
+      "patch_id": "WH_POS_03_RISHIGANGA_RAINI",
+      "ground_truth_label": "POSITIVE",
+      "center_lat": 30.482,
+      "center_lon": 79.698,
+      "bbox": [
+        79.6916,
+        30.476,
+        79.7044,
+        30.488
+      ],
+      "ground_truth_evidence": "Rishiganga riverbed sediment surge at Raini bridge junction",
+      "model_sigmoid_output": 1.0,
+      "binary_prediction": 1,
+      "is_correct": true
+    },
+    {
+      "region_id": "western_himalayas",
+      "patch_id": "WH_NEG_01_NANDA_DEVI_RIDGE",
+      "ground_truth_label": "NEGATIVE",
+      "center_lat": 30.45,
+      "center_lon": 79.78,
+      "bbox": [
+        79.7736,
+        30.444,
+        79.7864,
+        30.456
+      ],
+      "stability_evidence": "Stable high alpine ridge outside drainage basin, surveyed unaffected by EMSR501",
+      "model_sigmoid_output": 0.9974,
+      "binary_prediction": 1,
+      "is_correct": false
+    },
+    {
+      "region_id": "western_himalayas",
+      "patch_id": "WH_NEG_02_JOSHIMATH_PLATEAU",
+      "ground_truth_label": "NEGATIVE",
+      "center_lat": 30.55,
+      "center_lon": 79.56,
+      "bbox": [
+        79.5536,
+        30.544,
+        79.5664,
+        30.556
+      ],
+      "stability_evidence": "Upper terrace slopes north of Alaknanda unaffected during Feb 2021 event",
+      "model_sigmoid_output": 0.9973,
+      "binary_prediction": 1,
+      "is_correct": false
+    },
+    {
+      "region_id": "western_himalayas",
+      "patch_id": "WH_NEG_03_STABLE_FOREST_SLOPE",
+      "ground_truth_label": "NEGATIVE",
+      "center_lat": 30.49,
+      "center_lon": 79.65,
+      "bbox": [
+        79.6436,
+        30.484,
+        79.6564,
+        30.496
+      ],
+      "stability_evidence": "Dense pine/cedar forest slope showing no canopy loss or soil disruption between 2021-02-05 and 2021-02-10",
+      "model_sigmoid_output": 0.9974,
+      "binary_prediction": 1,
+      "is_correct": false
+    },
+    {
+      "region_id": "eastern_himalayas",
+      "patch_id": "EH_POS_01_CHUNGTHANG_CONFLUENCE",
+      "ground_truth_label": "POSITIVE",
+      "center_lat": 27.604,
+      "center_lon": 88.646,
+      "bbox": [
+        88.6396,
+        27.598,
+        88.6524,
+        27.61
+      ],
+      "ground_truth_evidence": "Teesta III dam breach zone and flank slope washouts documented in NRSC bulletin",
+      "model_sigmoid_output": 1.0,
+      "binary_prediction": 1,
+      "is_correct": true
+    },
+    {
+      "region_id": "eastern_himalayas",
+      "patch_id": "EH_POS_02_LACHEN_RIVER_SLIP",
+      "ground_truth_label": "POSITIVE",
+      "center_lat": 27.642,
+      "center_lon": 88.582,
+      "bbox": [
+        88.5756,
+        27.636,
+        88.5884,
+        27.648
+      ],
+      "ground_truth_evidence": "Lachen river toe erosion and massive slope collapse",
+      "model_sigmoid_output": 1.0,
+      "binary_prediction": 1,
+      "is_correct": true
+    },
+    {
+      "region_id": "eastern_himalayas",
+      "patch_id": "EH_NEG_01_GANGTOK_STABLE_RIDGE",
+      "ground_truth_label": "NEGATIVE",
+      "center_lat": 27.33,
+      "center_lon": 88.61,
+      "bbox": [
+        88.6036,
+        27.324,
+        88.6164,
+        27.336
+      ],
+      "stability_evidence": "Stable forested ridge south of Gangtok outside Teesta flash flood basin",
+      "model_sigmoid_output": 0.9971,
+      "binary_prediction": 1,
+      "is_correct": false
+    },
+    {
+      "region_id": "eastern_himalayas",
+      "patch_id": "EH_NEG_02_MAENAM_FOREST_RESERVE",
+      "ground_truth_label": "NEGATIVE",
+      "center_lat": 27.38,
+      "center_lon": 88.35,
+      "bbox": [
+        88.3436,
+        27.374,
+        88.3564,
+        27.386
+      ],
+      "stability_evidence": "Undisturbed temperate forest sanctuary with 100% stable canopy between Sept and Oct 2023",
+      "model_sigmoid_output": 0.9973,
+      "binary_prediction": 1,
+      "is_correct": false
+    },
+    {
+      "region_id": "eastern_himalayas",
+      "patch_id": "EH_UNV_01_UPPER_LHONAK_MORAINE",
+      "ground_truth_label": "UNVERIFIED",
+      "center_lat": 27.915,
+      "center_lon": 88.205,
+      "bbox": [
+        88.1986,
+        27.909,
+        88.2114,
+        27.921
+      ],
+      "reason": "High altitude (5200m) glaciated moraine with permafrost and dynamic seasonal ice melt making optical distinction from pure mass wasting ambiguous without ground sensor confirmation",
+      "model_sigmoid_output": null,
+      "binary_prediction": null,
+      "is_correct": null
+    },
+    {
+      "region_id": "northern_western_ghats",
+      "patch_id": "NWG_POS_01_TALIYE_SCARP_TOE",
+      "ground_truth_label": "POSITIVE",
+      "center_lat": 18.0335,
+      "center_lon": 73.5375,
+      "bbox": [
+        73.5311,
+        18.0275,
+        73.5439,
+        18.0395
+      ],
+      "ground_truth_evidence": "GSI GPS surveyed crown and entire debris runout path over Taliye settlement",
+      "model_sigmoid_output": 1.0,
+      "binary_prediction": 1,
+      "is_correct": true
+    },
+    {
+      "region_id": "northern_western_ghats",
+      "patch_id": "NWG_NEG_01_MAHABALESHWAR_PLATEAU",
+      "ground_truth_label": "NEGATIVE",
+      "center_lat": 17.925,
+      "center_lon": 73.655,
+      "bbox": [
+        73.6486,
+        17.919,
+        73.6614,
+        17.931
+      ],
+      "stability_evidence": "Flat laterite tableland surveyed stable during July 2021 monsoon",
+      "model_sigmoid_output": 0.9972,
+      "binary_prediction": 1,
+      "is_correct": false
+    },
+    {
+      "region_id": "northern_western_ghats",
+      "patch_id": "NWG_NEG_02_POLADPUR_STABLE_VALLEY",
+      "ground_truth_label": "NEGATIVE",
+      "center_lat": 17.98,
+      "center_lon": 73.48,
+      "bbox": [
+        73.4736,
+        17.974,
+        73.4864,
+        17.986
+      ],
+      "stability_evidence": "Flat agricultural valley floor confirmed unaffected by GSI district damage assessment",
+      "model_sigmoid_output": 0.9973,
+      "binary_prediction": 1,
+      "is_correct": false
+    },
+    {
+      "region_id": "southern_western_ghats",
+      "patch_id": "SWG_POS_01_VELLARIMALA_CROWN",
+      "ground_truth_label": "POSITIVE",
+      "center_lat": 11.504,
+      "center_lon": 76.224,
+      "bbox": [
+        76.2176,
+        11.498,
+        76.2304,
+        11.51
+      ],
+      "ground_truth_evidence": "Punchirimattom / Vellarimala primary initiation scarp and chute mapped by EMSR742",
+      "model_sigmoid_output": 1.0,
+      "binary_prediction": 1,
+      "is_correct": true
+    },
+    {
+      "region_id": "southern_western_ghats",
+      "patch_id": "SWG_POS_02_MUNDAKKAI_CORRIDOR",
+      "ground_truth_label": "POSITIVE",
+      "center_lat": 11.518,
+      "center_lon": 76.209,
+      "bbox": [
+        76.2026,
+        11.512,
+        76.2154,
+        11.524
+      ],
+      "ground_truth_evidence": "Mundakkai settlement complete debris flow transit and erosion corridor",
+      "model_sigmoid_output": 1.0,
+      "binary_prediction": 1,
+      "is_correct": true
+    },
+    {
+      "region_id": "southern_western_ghats",
+      "patch_id": "SWG_POS_03_CHOORALMALA_DEPOSITION",
+      "ground_truth_label": "POSITIVE",
+      "center_lat": 11.535,
+      "center_lon": 76.183,
+      "bbox": [
+        76.1766,
+        11.529,
+        76.1894,
+        11.541
+      ],
+      "ground_truth_evidence": "Chooralmala school and bridge debris widening and mud deposition zone",
+      "model_sigmoid_output": 1.0,
+      "binary_prediction": 1,
+      "is_correct": true
+    },
+    {
+      "region_id": "southern_western_ghats",
+      "patch_id": "SWG_NEG_01_KALPETTA_URBAN_TERRACE",
+      "ground_truth_label": "NEGATIVE",
+      "center_lat": 11.605,
+      "center_lon": 76.085,
+      "bbox": [
+        76.0786,
+        11.599,
+        76.0914,
+        11.611
+      ],
+      "stability_evidence": "Stable undulating urban terrace surveyed unaffected by Kerala SDMA and EMSR742 grading",
+      "model_sigmoid_output": 0.9974,
+      "binary_prediction": 1,
+      "is_correct": false
+    },
+    {
+      "region_id": "southern_western_ghats",
+      "patch_id": "SWG_NEG_02_CHEMBRA_SOUTH_RIDGE",
+      "ground_truth_label": "NEGATIVE",
+      "center_lat": 11.53,
+      "center_lon": 76.1,
+      "bbox": [
+        76.0936,
+        11.524,
+        76.1064,
+        11.536
+      ],
+      "stability_evidence": "Intact high-altitude grassland and shola ridge confirmed undisturbed throughout July-August 2024",
+      "model_sigmoid_output": 0.9971,
+      "binary_prediction": 1,
+      "is_correct": false
+    },
+    {
+      "region_id": "southern_western_ghats",
+      "patch_id": "SWG_NEG_03_MEPPADI_TEA_ESTATE_NORTH",
+      "ground_truth_label": "NEGATIVE",
+      "center_lat": 11.565,
+      "center_lon": 76.135,
+      "bbox": [
+        76.1286,
+        11.559,
+        76.1414,
+        11.571
+      ],
+      "stability_evidence": "Continuous intact tea plantation canopy 5km northwest of runout path with zero soil movement",
+      "model_sigmoid_output": 0.9974,
+      "binary_prediction": 1,
+      "is_correct": false
+    }
+  ]
+}

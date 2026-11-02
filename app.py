@@ -93,6 +93,7 @@ from pages.alert_center import render_alert_center_page     # 4. Alert Center & 
 from pages.highway_safety import render_highway_safety_page # 5. Highway Safety & Road Closures
 from pages.reports import render_reports_page               # 6. Reports & Data Downloads
 from pages.settings import render_settings_page             # 7. System Settings & Calibration
+from pages.satellite_intelligence import render_satellite_intelligence_page # 8. Satellite Intelligence & Earth Observation
 
 # ---------------------------------------------------------------------------
 # SECTION 3: Persistent Database Bootstrapping
@@ -288,7 +289,8 @@ with st.sidebar:
             "4. Alert Center",
             "5. Highway Safety & Road Closures",
             "6. Reports & Downloads",
-            "7. Settings"
+            "7. Settings",
+            "8. Satellite Intelligence"
         ],
         index=0
     )
@@ -559,6 +561,9 @@ elif menu_selection.startswith("6."):
 
 elif menu_selection.startswith("7."):
     render_settings_page()
+
+elif menu_selection.startswith("8."):
+    render_satellite_intelligence_page(enriched_stations)
 
 # ---------------------------------------------------------------------------
 # SECTION 10: Standard Operational Safety Disclaimer

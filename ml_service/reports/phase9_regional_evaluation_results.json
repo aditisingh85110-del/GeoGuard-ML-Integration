@@ -1,0 +1,500 @@
+{
+  "western_himalayas": {
+    "region_id": "western_himalayas",
+    "region_name": "Western Himalayas (Uttarakhand)",
+    "physiographic_zone": "High-Relief Alpine Glaciated Himalayan Terrain",
+    "verification_status": "VERIFIED",
+    "benchmark_event": {
+      "event_id": "IND-2021-EMSR501-CHAMOLI",
+      "event_name": "Chamoli Rock/Ice Avalanche & Debris Flow",
+      "event_date": "2021-02-07T04:51:00Z",
+      "source": "Copernicus Emergency Management Service (EMS) Rapid Mapping",
+      "spatial_uncertainty_meters": 10.0
+    },
+    "temporal_audit": {
+      "pre_event_date": "2021-02-05T05:19:39Z",
+      "pre_event_cloud_percent": 4.2,
+      "post_event_date": "2021-02-10T05:19:41Z",
+      "post_event_cloud_percent": 1.8,
+      "cloud_temporal_lag_days": 3
+    },
+    "results": {
+      "confusion_matrix": {
+        "TP": 3,
+        "FP": 3,
+        "TN": 0,
+        "FN": 0
+      },
+      "sample_counts": {
+        "total_evaluated_patches": 6,
+        "positive_ground_truth": 3,
+        "negative_ground_truth": 3
+      },
+      "metrics": {
+        "precision": 0.5,
+        "precision_95ci": [
+          0.1876,
+          0.8124
+        ],
+        "recall": 1.0,
+        "recall_95ci": [
+          0.4385,
+          1.0
+        ],
+        "specificity": 0.0,
+        "specificity_95ci": [
+          0.0,
+          0.5615
+        ],
+        "f1_score": 0.6667,
+        "false_positive_rate": 1.0,
+        "false_negative_rate": 0.0
+      }
+    },
+    "post_event_patch_details": [
+      {
+        "patch_id": "WH_POS_01_DETACHMENT",
+        "phase": "POST_EVENT",
+        "ground_truth_label": "POSITIVE",
+        "model_sigmoid_output": 1.0,
+        "binary_prediction": 1,
+        "result_category": "TP",
+        "raster_source": "CALIBRATED_BENCHMARK_RASTER",
+        "clipping_ratio": 0.0
+      },
+      {
+        "patch_id": "WH_POS_02_RAUNTHI_CORRIDOR",
+        "phase": "POST_EVENT",
+        "ground_truth_label": "POSITIVE",
+        "model_sigmoid_output": 1.0,
+        "binary_prediction": 1,
+        "result_category": "TP",
+        "raster_source": "CALIBRATED_BENCHMARK_RASTER",
+        "clipping_ratio": 0.0
+      },
+      {
+        "patch_id": "WH_POS_03_RISHIGANGA_RAINI",
+        "phase": "POST_EVENT",
+        "ground_truth_label": "POSITIVE",
+        "model_sigmoid_output": 1.0,
+        "binary_prediction": 1,
+        "result_category": "TP",
+        "raster_source": "CALIBRATED_BENCHMARK_RASTER",
+        "clipping_ratio": 0.0
+      },
+      {
+        "patch_id": "WH_NEG_01_NANDA_DEVI_RIDGE",
+        "phase": "POST_EVENT",
+        "ground_truth_label": "NEGATIVE",
+        "model_sigmoid_output": 0.9974,
+        "binary_prediction": 1,
+        "result_category": "FP",
+        "raster_source": "CALIBRATED_BENCHMARK_RASTER",
+        "clipping_ratio": 0.0
+      },
+      {
+        "patch_id": "WH_NEG_02_JOSHIMATH_PLATEAU",
+        "phase": "POST_EVENT",
+        "ground_truth_label": "NEGATIVE",
+        "model_sigmoid_output": 0.9973,
+        "binary_prediction": 1,
+        "result_category": "FP",
+        "raster_source": "CALIBRATED_BENCHMARK_RASTER",
+        "clipping_ratio": 0.0
+      },
+      {
+        "patch_id": "WH_NEG_03_STABLE_FOREST_SLOPE",
+        "phase": "POST_EVENT",
+        "ground_truth_label": "NEGATIVE",
+        "model_sigmoid_output": 0.9974,
+        "binary_prediction": 1,
+        "result_category": "FP",
+        "raster_source": "CALIBRATED_BENCHMARK_RASTER",
+        "clipping_ratio": 0.0
+      }
+    ],
+    "pre_event_baseline_audit": [
+      {
+        "patch_id": "WH_POS_01_DETACHMENT_PRE",
+        "phase": "PRE_EVENT",
+        "ground_truth_pre_event_state": "STABLE_PRIOR_TO_DISASTER",
+        "model_sigmoid_output": 0.9974,
+        "binary_prediction": 1,
+        "is_false_alarm_pre_event": true
+      },
+      {
+        "patch_id": "WH_POS_02_RAUNTHI_CORRIDOR_PRE",
+        "phase": "PRE_EVENT",
+        "ground_truth_pre_event_state": "STABLE_PRIOR_TO_DISASTER",
+        "model_sigmoid_output": 0.9975,
+        "binary_prediction": 1,
+        "is_false_alarm_pre_event": true
+      },
+      {
+        "patch_id": "WH_POS_03_RISHIGANGA_RAINI_PRE",
+        "phase": "PRE_EVENT",
+        "ground_truth_pre_event_state": "STABLE_PRIOR_TO_DISASTER",
+        "model_sigmoid_output": 0.9971,
+        "binary_prediction": 1,
+        "is_false_alarm_pre_event": true
+      }
+    ],
+    "unverified_samples_count": 0,
+    "confusion_matrix_plot": "C:\\Users\\DELL\\Project\\ml_service\\reports\\confusion_matrix_western_himalayas.png"
+  },
+  "eastern_himalayas": {
+    "region_id": "eastern_himalayas",
+    "region_name": "Eastern Himalayas (Sikkim / Teesta Basin)",
+    "physiographic_zone": "Steep Sub-Tropical to Alpine Montane Slopes",
+    "verification_status": "PARTIALLY_VERIFIED",
+    "benchmark_event": {
+      "event_id": "IND-2023-NRSC-SIKKIM-GLOF",
+      "event_name": "South Lhonak Glacial Lake Outburst & Teesta Valley Slopes",
+      "event_date": "2023-10-04T00:15:00Z",
+      "source": "ISRO National Remote Sensing Centre (NRSC) / NASA GLC",
+      "spatial_uncertainty_meters": 250.0
+    },
+    "temporal_audit": {
+      "pre_event_date": "2023-09-28T04:47:09Z",
+      "pre_event_cloud_percent": 18.5,
+      "post_event_date": "2023-10-18T04:48:11Z",
+      "post_event_cloud_percent": 6.8,
+      "cloud_temporal_lag_days": 14
+    },
+    "results": {
+      "confusion_matrix": {
+        "TP": 2,
+        "FP": 2,
+        "TN": 0,
+        "FN": 0
+      },
+      "sample_counts": {
+        "total_evaluated_patches": 4,
+        "positive_ground_truth": 2,
+        "negative_ground_truth": 2
+      },
+      "metrics": {
+        "precision": 0.5,
+        "precision_95ci": [
+          0.15,
+          0.85
+        ],
+        "recall": 1.0,
+        "recall_95ci": [
+          0.3424,
+          1.0
+        ],
+        "specificity": 0.0,
+        "specificity_95ci": [
+          0.0,
+          0.6576
+        ],
+        "f1_score": 0.6667,
+        "false_positive_rate": 1.0,
+        "false_negative_rate": 0.0
+      }
+    },
+    "post_event_patch_details": [
+      {
+        "patch_id": "EH_POS_01_CHUNGTHANG_CONFLUENCE",
+        "phase": "POST_EVENT",
+        "ground_truth_label": "POSITIVE",
+        "model_sigmoid_output": 1.0,
+        "binary_prediction": 1,
+        "result_category": "TP",
+        "raster_source": "CALIBRATED_BENCHMARK_RASTER",
+        "clipping_ratio": 0.0
+      },
+      {
+        "patch_id": "EH_POS_02_LACHEN_RIVER_SLIP",
+        "phase": "POST_EVENT",
+        "ground_truth_label": "POSITIVE",
+        "model_sigmoid_output": 1.0,
+        "binary_prediction": 1,
+        "result_category": "TP",
+        "raster_source": "CALIBRATED_BENCHMARK_RASTER",
+        "clipping_ratio": 0.0
+      },
+      {
+        "patch_id": "EH_NEG_01_GANGTOK_STABLE_RIDGE",
+        "phase": "POST_EVENT",
+        "ground_truth_label": "NEGATIVE",
+        "model_sigmoid_output": 0.9971,
+        "binary_prediction": 1,
+        "result_category": "FP",
+        "raster_source": "CALIBRATED_BENCHMARK_RASTER",
+        "clipping_ratio": 0.0
+      },
+      {
+        "patch_id": "EH_NEG_02_MAENAM_FOREST_RESERVE",
+        "phase": "POST_EVENT",
+        "ground_truth_label": "NEGATIVE",
+        "model_sigmoid_output": 0.9973,
+        "binary_prediction": 1,
+        "result_category": "FP",
+        "raster_source": "CALIBRATED_BENCHMARK_RASTER",
+        "clipping_ratio": 0.0
+      }
+    ],
+    "pre_event_baseline_audit": [
+      {
+        "patch_id": "EH_POS_01_CHUNGTHANG_CONFLUENCE_PRE",
+        "phase": "PRE_EVENT",
+        "ground_truth_pre_event_state": "STABLE_PRIOR_TO_DISASTER",
+        "model_sigmoid_output": 0.9972,
+        "binary_prediction": 1,
+        "is_false_alarm_pre_event": true
+      },
+      {
+        "patch_id": "EH_POS_02_LACHEN_RIVER_SLIP_PRE",
+        "phase": "PRE_EVENT",
+        "ground_truth_pre_event_state": "STABLE_PRIOR_TO_DISASTER",
+        "model_sigmoid_output": 0.9976,
+        "binary_prediction": 1,
+        "is_false_alarm_pre_event": true
+      }
+    ],
+    "unverified_samples_count": 1,
+    "confusion_matrix_plot": "C:\\Users\\DELL\\Project\\ml_service\\reports\\confusion_matrix_eastern_himalayas.png"
+  },
+  "northern_western_ghats": {
+    "region_id": "northern_western_ghats",
+    "region_name": "Northern Western Ghats (Maharashtra)",
+    "physiographic_zone": "Deccan Basaltic Traps & Lateritic Escarpments",
+    "verification_status": "VERIFIED",
+    "benchmark_event": {
+      "event_id": "IND-2021-GSI-TALIYE",
+      "event_name": "Taliye Village Debris Flow & Mahabaleshwar Escarpment",
+      "event_date": "2021-07-22T11:00:00Z",
+      "source": "Geological Survey of India (GSI) / NASA GLC",
+      "spatial_uncertainty_meters": 15.0
+    },
+    "temporal_audit": {
+      "pre_event_date": "2021-05-15T05:36:49Z",
+      "pre_event_cloud_percent": 0.5,
+      "post_event_date": "2021-10-10T05:36:49Z",
+      "post_event_cloud_percent": 11.2,
+      "cloud_temporal_lag_days": 80
+    },
+    "results": {
+      "confusion_matrix": {
+        "TP": 1,
+        "FP": 2,
+        "TN": 0,
+        "FN": 0
+      },
+      "sample_counts": {
+        "total_evaluated_patches": 3,
+        "positive_ground_truth": 1,
+        "negative_ground_truth": 2
+      },
+      "metrics": {
+        "precision": 0.3333,
+        "precision_95ci": [
+          0.0615,
+          0.7923
+        ],
+        "recall": 1.0,
+        "recall_95ci": [
+          0.2065,
+          1.0
+        ],
+        "specificity": 0.0,
+        "specificity_95ci": [
+          0.0,
+          0.6576
+        ],
+        "f1_score": 0.5,
+        "false_positive_rate": 1.0,
+        "false_negative_rate": 0.0
+      }
+    },
+    "post_event_patch_details": [
+      {
+        "patch_id": "NWG_POS_01_TALIYE_SCARP_TOE",
+        "phase": "POST_EVENT",
+        "ground_truth_label": "POSITIVE",
+        "model_sigmoid_output": 1.0,
+        "binary_prediction": 1,
+        "result_category": "TP",
+        "raster_source": "CALIBRATED_BENCHMARK_RASTER",
+        "clipping_ratio": 0.0
+      },
+      {
+        "patch_id": "NWG_NEG_01_MAHABALESHWAR_PLATEAU",
+        "phase": "POST_EVENT",
+        "ground_truth_label": "NEGATIVE",
+        "model_sigmoid_output": 0.9972,
+        "binary_prediction": 1,
+        "result_category": "FP",
+        "raster_source": "CALIBRATED_BENCHMARK_RASTER",
+        "clipping_ratio": 0.0
+      },
+      {
+        "patch_id": "NWG_NEG_02_POLADPUR_STABLE_VALLEY",
+        "phase": "POST_EVENT",
+        "ground_truth_label": "NEGATIVE",
+        "model_sigmoid_output": 0.9973,
+        "binary_prediction": 1,
+        "result_category": "FP",
+        "raster_source": "CALIBRATED_BENCHMARK_RASTER",
+        "clipping_ratio": 0.0
+      }
+    ],
+    "pre_event_baseline_audit": [
+      {
+        "patch_id": "NWG_POS_01_TALIYE_SCARP_TOE_PRE",
+        "phase": "PRE_EVENT",
+        "ground_truth_pre_event_state": "STABLE_PRIOR_TO_DISASTER",
+        "model_sigmoid_output": 0.9974,
+        "binary_prediction": 1,
+        "is_false_alarm_pre_event": true
+      }
+    ],
+    "unverified_samples_count": 0,
+    "confusion_matrix_plot": "C:\\Users\\DELL\\Project\\ml_service\\reports\\confusion_matrix_northern_western_ghats.png"
+  },
+  "southern_western_ghats": {
+    "region_id": "southern_western_ghats",
+    "region_name": "Southern Western Ghats (Kerala)",
+    "physiographic_zone": "Charnockite Saprolite & Evergreen Rainforest Canopy",
+    "verification_status": "VERIFIED",
+    "benchmark_event": {
+      "event_id": "IND-2024-EMSR742-WAYANAD",
+      "event_name": "Chooralmala-Mundakkai-Meppadi Catastrophic Debris Flow",
+      "event_date": "2024-07-30T02:00:00Z",
+      "source": "Copernicus Emergency Management Service (EMS) Rapid Mapping",
+      "spatial_uncertainty_meters": 5.0
+    },
+    "temporal_audit": {
+      "pre_event_date": "2024-04-15T05:06:51Z",
+      "pre_event_cloud_percent": 8.4,
+      "post_event_date": "2024-08-14T05:06:51Z",
+      "post_event_cloud_percent": 14.2,
+      "cloud_temporal_lag_days": 15
+    },
+    "results": {
+      "confusion_matrix": {
+        "TP": 3,
+        "FP": 3,
+        "TN": 0,
+        "FN": 0
+      },
+      "sample_counts": {
+        "total_evaluated_patches": 6,
+        "positive_ground_truth": 3,
+        "negative_ground_truth": 3
+      },
+      "metrics": {
+        "precision": 0.5,
+        "precision_95ci": [
+          0.1876,
+          0.8124
+        ],
+        "recall": 1.0,
+        "recall_95ci": [
+          0.4385,
+          1.0
+        ],
+        "specificity": 0.0,
+        "specificity_95ci": [
+          0.0,
+          0.5615
+        ],
+        "f1_score": 0.6667,
+        "false_positive_rate": 1.0,
+        "false_negative_rate": 0.0
+      }
+    },
+    "post_event_patch_details": [
+      {
+        "patch_id": "SWG_POS_01_VELLARIMALA_CROWN",
+        "phase": "POST_EVENT",
+        "ground_truth_label": "POSITIVE",
+        "model_sigmoid_output": 1.0,
+        "binary_prediction": 1,
+        "result_category": "TP",
+        "raster_source": "CALIBRATED_BENCHMARK_RASTER",
+        "clipping_ratio": 0.0
+      },
+      {
+        "patch_id": "SWG_POS_02_MUNDAKKAI_CORRIDOR",
+        "phase": "POST_EVENT",
+        "ground_truth_label": "POSITIVE",
+        "model_sigmoid_output": 1.0,
+        "binary_prediction": 1,
+        "result_category": "TP",
+        "raster_source": "CALIBRATED_BENCHMARK_RASTER",
+        "clipping_ratio": 0.0
+      },
+      {
+        "patch_id": "SWG_POS_03_CHOORALMALA_DEPOSITION",
+        "phase": "POST_EVENT",
+        "ground_truth_label": "POSITIVE",
+        "model_sigmoid_output": 1.0,
+        "binary_prediction": 1,
+        "result_category": "TP",
+        "raster_source": "CALIBRATED_BENCHMARK_RASTER",
+        "clipping_ratio": 0.0
+      },
+      {
+        "patch_id": "SWG_NEG_01_KALPETTA_URBAN_TERRACE",
+        "phase": "POST_EVENT",
+        "ground_truth_label": "NEGATIVE",
+        "model_sigmoid_output": 0.9974,
+        "binary_prediction": 1,
+        "result_category": "FP",
+        "raster_source": "CALIBRATED_BENCHMARK_RASTER",
+        "clipping_ratio": 0.0
+      },
+      {
+        "patch_id": "SWG_NEG_02_CHEMBRA_SOUTH_RIDGE",
+        "phase": "POST_EVENT",
+        "ground_truth_label": "NEGATIVE",
+        "model_sigmoid_output": 0.9971,
+        "binary_prediction": 1,
+        "result_category": "FP",
+        "raster_source": "CALIBRATED_BENCHMARK_RASTER",
+        "clipping_ratio": 0.0
+      },
+      {
+        "patch_id": "SWG_NEG_03_MEPPADI_TEA_ESTATE_NORTH",
+        "phase": "POST_EVENT",
+        "ground_truth_label": "NEGATIVE",
+        "model_sigmoid_output": 0.9974,
+        "binary_prediction": 1,
+        "result_category": "FP",
+        "raster_source": "CALIBRATED_BENCHMARK_RASTER",
+        "clipping_ratio": 0.0
+      }
+    ],
+    "pre_event_baseline_audit": [
+      {
+        "patch_id": "SWG_POS_01_VELLARIMALA_CROWN_PRE",
+        "phase": "PRE_EVENT",
+        "ground_truth_pre_event_state": "STABLE_PRIOR_TO_DISASTER",
+        "model_sigmoid_output": 0.9972,
+        "binary_prediction": 1,
+        "is_false_alarm_pre_event": true
+      },
+      {
+        "patch_id": "SWG_POS_02_MUNDAKKAI_CORRIDOR_PRE",
+        "phase": "PRE_EVENT",
+        "ground_truth_pre_event_state": "STABLE_PRIOR_TO_DISASTER",
+        "model_sigmoid_output": 0.9972,
+        "binary_prediction": 1,
+        "is_false_alarm_pre_event": true
+      },
+      {
+        "patch_id": "SWG_POS_03_CHOORALMALA_DEPOSITION_PRE",
+        "phase": "PRE_EVENT",
+        "ground_truth_pre_event_state": "STABLE_PRIOR_TO_DISASTER",
+        "model_sigmoid_output": 0.9974,
+        "binary_prediction": 1,
+        "is_false_alarm_pre_event": true
+      }
+    ],
+    "unverified_samples_count": 0,
+    "confusion_matrix_plot": "C:\\Users\\DELL\\Project\\ml_service\\reports\\confusion_matrix_southern_western_ghats.png"
+  }
+}
